@@ -494,6 +494,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -505,6 +518,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#starting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Plan
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -584,6 +634,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#starting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Plan
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -601,21 +677,94 @@
 <div><h1 id="testing">Testing</h1>
 <p>Testing is a crucial part of web application development, ensuring your app works as expected, is reliable, and provides a good user experience. Since you’ve built applications with JavaScript, React, and Next.js but haven’t done testing yet, I’ll walk you through the types of testing commonly used in web applications, explain where to start, and address whether you should test first or later.</p>
 <p><a class="glightbox" href="https://browserstack.wpenginepowered.com/wp-content/uploads/2023/04/Three-types-of-tests-written-for-React-applications.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Types of Testing" src="https://browserstack.wpenginepowered.com/wp-content/uploads/2023/04/Three-types-of-tests-written-for-React-applications.png"></a></p>
-<ol>
-<li>Unit Testing</li>
-<li>Integration Testing</li>
-<li>End-to-End (E2E) Testing</li>
-<li>
-<p>Other Types</p>
+<hr>
+<h2 id="starting">Starting</h2>
+<p>Deciding where to start with testing or which type is "most important" depends on your goals, your app’s current state, and your experience level. Since you’ve built an app with JavaScript, React, and Next.js but haven’t done any testing yet, I’ll break this down to help you choose.</p>
+<details class="note" open="open">
+<summary>Where Should You Start?</summary>
+<p>For someone new to testing with an existing app, <strong>Unit Testing</strong> is the <mark>best starting point</mark>. Here’s why:</p>
 <ul>
-<li>Snapshot</li>
-<li>Visual Regression</li>
-<li>Performance</li>
-<li>Accessibility</li>
-<li>Manual</li>
+<li><strong>Ease of Learning</strong>: Unit tests focus on small, isolated pieces (e.g., a single React component or function), making them simpler to understand and write compared to broader tests like E2E.</li>
+<li><strong>Quick Feedback</strong>: They run fast and give immediate results, helping you build confidence in testing.</li>
+<li><strong>Foundation</strong>: Mastering unit testing sets you up to tackle more complex types later (e.g., integration or E2E).</li>
+<li><strong>Practical for Your Stack</strong>: React and Next.js are component-based, so unit testing aligns naturally with your codebase.</li>
+</ul>
+<p><strong>Starting Example</strong>: Use <a href="#">Jest</a> and <a href="#">React Testing Library</a> to test a simple component (like the <code>Button</code> example from earlier). It’s low effort to set up and gives you a tangible win.</p>
+</details>
+<details class="tip" open="open">
+<summary>Which Testing Type is Most Important?</summary>
+<p>"Most important" varies by <mark>context</mark>, but here’s how to think about it:</p>
+<ol>
+<li>
+<p><strong>Unit Testing</strong></p>
+<ul>
+<li>Importance: High for catching bugs early in individual pieces of code. It’s the backbone of a solid test suite.</li>
+<li>Why: Prevents small errors from snowballing. For example, ensuring a button’s click handler works saves headaches later.</li>
+<li>When it’s critical: For apps with lots of reusable logic or components (common in React/Next.js).</li>
 </ul>
 </li>
-</ol></div>
+<li>
+<p><strong>Integration Testing</strong></p>
+<ul>
+<li>Importance: High if your app relies on components working together (e.g., forms, API calls, state management).</li>
+<li>Why: Catches issues unit tests miss, like a form not passing data correctly to a parent component.</li>
+<li>When it’s critical: If your app has complex interactions between parts.</li>
+</ul>
+</li>
+<li>
+<p><strong>End-to-End (E2E) Testing</strong></p>
+<ul>
+<li>Importance: Very high for ensuring the app works as a whole from a user’s perspective.</li>
+<li>Why: Validates real-world flows (e.g., login → dashboard → logout). It’s the closest to how users experience your app.</li>
+<li>When it’s critical: For production apps where user experience and reliability are non-negotiable (e.g., e-commerce, SaaS).</li>
+</ul>
+</li>
+<li>
+<p><strong>Other Types</strong></p>
+<ul>
+<li><strong>Snapshot</strong>: Useful for UI consistency but less critical early on.</li>
+<li><strong>Visual Regression</strong>: Important for design-heavy apps, less so for functionality.</li>
+<li><strong>Performance</strong>: Vital for user retention but can wait until core functionality is tested.</li>
+<li><strong>Accessibility</strong>: Essential for inclusivity and compliance, but you can layer it in after basics.</li>
+<li><strong>Manual</strong>: Good for exploration, but automation is more scalable.</li>
+</ul>
+</li>
+</ol>
+</details>
+<details class="success" open="open">
+<summary>Recommendation</summary>
+<ul>
+<li><strong>Start with Unit Testing</strong>: It’s the most approachable and gives you a strong base. Set up <a href="#">Jest</a> and <a href="#">React Testing Library</a>, then test a few key components (e.g., a button, a form input). This builds your testing skills without overwhelming you.</li>
+<li><strong>Most Important Long-Term</strong>: E2E Testing often becomes the most critical as your app grows because it ensures the entire system works for users. However, it’s harder to start with due to setup complexity (e.g., Cypress) and requires a stable app to test effectively.</li>
+</ul>
+</details>
+<hr>
+<h2 id="practical-plan">Practical Plan</h2>
+<ol>
+<li>
+<p><strong>Day 1</strong>: Install <a href="#">Jest</a> (<code>npm install --save-dev jest</code>) and <a href="#">React Testing Library</a> (<code>npm install --save-dev @testing-library/react</code>), then write a unit test for a component you’ve already built. Example:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">test</span><span class="p">(</span><span class="s2">"button renders"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Button</span><span class="w"> </span><span class="nx">label</span><span class="o">=</span><span class="s2">"Click me"</span><span class="w"> </span><span class="o">/&gt;</span><span class="p">);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nx">expect</span><span class="p">(</span><span class="nx">screen</span><span class="p">.</span><span class="nx">getByText</span><span class="p">(</span><span class="s2">"Click me"</span><span class="p">)).</span><span class="nx">toBeInTheDocument</span><span class="p">();</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">});</span>
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>Next Step</strong>: After a few unit tests, try an integration test for a component group (e.g., a form with a submit button).</p>
+</li>
+<li>
+<p><strong>Later</strong>: Add E2E testing with Cypress once you’re comfortable, focusing on key user flows.</p>
+</li>
+</ol>
+<details class="question" open="open">
+<summary>Why Not Start Elsewhere?</summary>
+<ul>
+<li><strong>E2E</strong>: Too complex for a beginner; better after you’ve tested smaller pieces.</li>
+<li><strong>Performance/Accessibility</strong>: Important but secondary until functionality is solid.</li>
+<li><strong>Manual</strong>: Useful now, but automation (starting with unit tests) scales better.</li>
+</ul>
+</details>
+<p><strong>Conclusion</strong>: Start with <mark>unit testing</mark> for its simplicity and immediate value. Long-term, <mark>E2E testing</mark> might be the most important for your app’s success, but build up to it. Let me know if you need help setting up that first unit test!</p></div>
 
 
 
