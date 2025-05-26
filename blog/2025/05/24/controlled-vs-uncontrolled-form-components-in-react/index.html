@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://js-testing.github.io/blog/2025/05/22/understanding-the-difference-between-jsdom-and-testing-libraryjest-dom/">
+        <link rel="canonical" href="https://js-testing.github.io/blog/2025/05/24/controlled-vs-uncontrolled-form-components-in-react/">
       
       
-        <link rel="prev" href="../../21/choosing-between-jest-vitest-and-react-testing-library/">
+        <link rel="prev" href="../../23/controlled-vs-uncontrolled-components-in-react/">
       
-      
-        <link rel="next" href="../../23/controlled-vs-uncontrolled-components-in-react/">
       
       
       <link rel="icon" href="../../../../../assets/logo/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Understanding the Difference Between jsdom and @testing-library/jest-dom - JS Testing</title>
+        <title>Controlled vs Uncontrolled Form Components in React - JS Testing</title>
       
     
     
@@ -85,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#understanding-the-difference-between-jsdom-and-testing-libraryjest-dom" class="md-skip">
+        <a href="#controlled-vs-uncontrolled-form-components-in-react" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Understanding the Difference Between jsdom and @testing-library/jest-dom
+              Controlled vs Uncontrolled Form Components in React
             
           </span>
         </div>
@@ -762,63 +760,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-jsdom" class="md-nav__link">
+  <a href="#what-are-controlled-and-uncontrolled-components" class="md-nav__link">
     <span class="md-ellipsis">
-      What is jsdom?
+      📌 What Are Controlled and Uncontrolled Components?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 What Are Controlled and Uncontrolled Components?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#controlled-form-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Controlled Form Component
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uncontrolled-form-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      ❌ Uncontrolled Form Component
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-comparison-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Feature Comparison Table
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-is-testing-libraryjest-dom" class="md-nav__link">
+  <a href="#when-to-use-which" class="md-nav__link">
     <span class="md-ellipsis">
-      What is @testing-library/jest-dom?
+      🧭 When to Use Which?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-do-jsdom-and-jest-dom-work-together" class="md-nav__link">
+  <a href="#bonus-hybrid-forms" class="md-nav__link">
     <span class="md-ellipsis">
-      How Do jsdom and jest-dom Work Together?
+      🧩 Bonus: Hybrid Forms
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#do-you-always-need-both" class="md-nav__link">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Do You Always Need Both?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-vitest-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Vitest Setup
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
+      🎯 Conclusion
     </span>
   </a>
   
@@ -861,21 +865,10 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2025-05-22 00:00:00+00:00" class="md-ellipsis">May 22, 2025</time>
+                        <time datetime="2025-05-24 00:00:00+00:00" class="md-ellipsis">May 24, 2025</time>
                       </div>
                     </li>
                     
-                    
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
-                          <span class="md-ellipsis">
-                            in
-                            
-                              <a href="../../../../category/frontend/">Frontend</a>, 
-                              <a href="../../../../category/testing/">Testing</a></span>
-                        </div>
-                      </li>
                     
                     
                       
@@ -908,171 +901,220 @@
 
 
 
-<div><h1 id="understanding-the-difference-between-jsdom-and-testing-libraryjest-dom">Understanding the Difference Between <code>jsdom</code> and <code>@testing-library/jest-dom</code></h1>
-<p>Yes, exactly — <code>jsdom</code> and <code>@testing-library/jest-dom</code> are completely different things, but they often work together in testing setups.</p>
+<div><h1 id="controlled-vs-uncontrolled-form-components-in-react">Controlled vs Uncontrolled Form Components in React</h1>
+<p>One of the most fundamental concepts in building forms with React is the difference between <strong>controlled</strong> and <strong>uncontrolled components</strong>. Understanding this difference helps you decide <strong>how to handle form input</strong> in a way that best fits your application's needs.</p>
 <!-- more -->
 
-<p><a href="#">vitest</a>: The testing framework.</p>
-<div class="language-bash highlight"><span class="filename">Installation</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>vitest
-</span></code></pre></div>
-<p>After installing <code>vitest</code>, we will have to add a script to our <code>package.json</code> file to run our test.</p>
-<div class="language-js highlight"><span class="filename">package.json</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="s2">"scripts"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="s2">"test"</span><span class="o">:</span><span class="w"> </span><span class="s2">"vitest"</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">}</span>
-</span></code></pre></div>
-<p class="annotate">By default, Vitest requires you to import basic functions like describe and expect. To make these available as globals, you’ll need to make a couple of configuration tweaks. (1)</p>
-<ol>
-<li>
-<p>First, update <code>vite.config.tsx</code> to use the <code>defineConfig</code> function from <code>vitest/config</code>, and enable the <code>test.globals</code> flag:</p>
-<div class="language-ts highlight"><span class="filename">vite.config.ts</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">defineConfig</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"vitest/config"</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">react</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@vitejs/plugin-react"</span><span class="p">;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">// https://vitejs.dev/config/</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">defineConfig</span><span class="p">({</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">react</span><span class="p">()],</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nx">test</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nx">globals</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">});</span>
-</span></code></pre></div>
 <hr>
-<p><a href="#">Test Drivern React, Second Edition by Trevor Burnham</a></p>
-</li>
-</ol>
-<hr>
-<h2 id="what-is-jsdom">What is <code>jsdom</code>?</h2>
+<h2 id="what-are-controlled-and-uncontrolled-components">📌 What Are Controlled and Uncontrolled Components?</h2>
+<h3 id="controlled-form-component">✅ Controlled Form Component</h3>
+<p>A <strong>controlled component</strong> is a form element (like <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, or <code>&lt;select&gt;</code>) whose value is <strong>controlled by React state</strong>. Every change in the input is handled through a React <code>onChange</code> handler that updates the component’s state.</p>
+<details class="quote" open="open">
+<summary>Quote</summary>
 <ul>
-<li><strong><code>jsdom</code></strong> is a JavaScript-based implementation of the browser’s DOM.</li>
-<li>It runs inside Node.js to <strong>simulate a real browser environment</strong>.</li>
-<li>Because Node.js does not have a native DOM, <code>jsdom</code> provides essential browser APIs like <code>window</code>, <code>document</code>, and <code>HTMLElement</code>.</li>
-<li>This environment lets you <strong>render UI components (React, Vue, etc.) and interact with the DOM during tests</strong>.</li>
-<li>Without <code>jsdom</code>, you can’t test UI code that depends on the DOM in Node.js.</li>
+<li>The input’s value comes from the component’s <code>state</code>.</li>
+<li>Every change in the input is handled by an <code>onChange</code> handler that updates the <code>state</code>.</li>
 </ul>
-<div class="language-bash highlight"><span class="filename">Installation</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npm<span class="w"> </span>install<span class="w"> </span>jsdom<span class="w"> </span>--save-dev
+</details>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">ControlledForm</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">email</span><span class="p">,</span><span class="w"> </span><span class="nx">setEmail</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleSubmit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Submitted email:"</span><span class="p">,</span><span class="w"> </span><span class="nx">email</span><span class="p">);</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="p">};</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">&lt;</span><span class="nt">form</span><span class="w"> </span><span class="na">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="nx">handleSubmit</span><span class="p">}&gt;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">      </span><span class="p">&lt;</span><span class="nt">input</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="na">type</span><span class="o">=</span><span class="s">"email"</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">email</span><span class="p">}</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span><span class="na">onChange</span><span class="o">=</span><span class="p">{(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setEmail</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="p">/&gt;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">      </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">type</span><span class="o">=</span><span class="s">"submit"</span><span class="p">&gt;</span><span class="nx">Submit</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">  </span><span class="p">);</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>After installing <code>jsdom</code>, we have to include <code>jsdom</code> in the Vite configuration file, which you can find at the root of your React project <code>vite.config.js</code></p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">defineConfig</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"vite"</span><span class="p">;</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">react</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@vitejs/plugin-react"</span><span class="p">;</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1">// https://vitejs.dev/config/</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">defineConfig</span><span class="p">({</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">react</span><span class="p">()],</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="nx">test</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="c1">// 👋 add the line below to add jsdom to vite</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="nx">environment</span><span class="o">:</span><span class="w"> </span><span class="s2">"jsdom"</span><span class="p">,</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="p">});</span>
-</span></code></pre></div>
-<hr>
-<h2 id="what-is-testing-libraryjest-dom">What is <code>@testing-library/jest-dom</code>?</h2>
 <ul>
-<li><strong><code>@testing-library/jest-dom</code></strong> is a library that adds <strong>custom Jest matchers</strong> for asserting on DOM nodes.</li>
-<li>
-<p>Examples of matchers it provides:</p>
-<ul>
-<li><code>.toBeInTheDocument()</code></li>
-<li><code>.toHaveTextContent()</code></li>
-<li><code>.toHaveAttribute()</code></li>
-<li><code>.toHaveClass()</code></li>
+<li>React is the <strong>single source of truth</strong> for the input.</li>
+<li>Useful for validation, formatting, or conditional rendering.</li>
 </ul>
-</li>
-<li>
-<p>These matchers make your test assertions more readable and expressive.</p>
-</li>
-<li>However, since they assert on DOM elements, <strong>they require a DOM environment to work</strong>.</li>
-</ul>
-<div class="language-bash highlight"><span class="filename">Installation</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>npm<span class="w"> </span>install<span class="w"> </span>@testing-library/react<span class="w"> </span>@testing-library/jest-dom<span class="w"> </span>--save-dev
-</span></code></pre></div>
 <details class="tip" open="open">
-<summary>Explanation</summary>
+<summary>Tip</summary>
 <ul>
-<li><code>@testing-library/react</code>: Provides utilities to test React components.</li>
-<li><code>@testing-library/jest-dom</code>: Adds custom matchers to Jest and Vitest for DOM node assertions.</li>
-<li><code>@testing-library/user-event</code>: Simulates user interactions with the DOM.</li>
+<li>🟢 React controls the input.</li>
+<li>🟢 State is the single source of truth.</li>
+<li>🟢 Easy to validate, format, and manipulate data dynamically.</li>
 </ul>
 </details>
 <hr>
-<h2 id="how-do-jsdom-and-jest-dom-work-together">How Do <code>jsdom</code> and <code>jest-dom</code> Work Together?</h2>
+<h3 id="uncontrolled-form-component">❌ Uncontrolled Form Component</h3>
+<p>An <strong>uncontrolled component</strong> is one where the form input keeps <mark>its own internal state</mark>, and you access its value using a <code>ref</code>.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">UncontrolledForm</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">emailRef</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useRef</span><span class="p">();</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleSubmit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Submitted email:"</span><span class="p">,</span><span class="w"> </span><span class="nx">emailRef</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="p">};</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">form</span><span class="w"> </span><span class="nx">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="nx">handleSubmit</span><span class="p">}</span><span class="o">&gt;</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">input</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">"email"</span><span class="w"> </span><span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">emailRef</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">button</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">"submit"</span><span class="o">&gt;</span><span class="nx">Submit</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/form&gt;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="p">);</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li>The DOM maintains the input's value.</li>
+<li>Good for simple forms or when you don’t need React to track state.</li>
+</ul>
+<details class="note" open="open">
+<summary>Note</summary>
+<ul>
+<li>🔵 React does not control the input.</li>
+<li>🔵 Good for quick or simple forms.</li>
+<li>🔵 Harder to perform validation or pre-fill logic.</li>
+</ul>
+</details>
+<hr>
+<h2 id="feature-comparison-table">📝 Feature Comparison Table</h2>
 <table>
 <thead>
 <tr>
-<th><code>jsdom</code></th>
-<th><code>@testing-library/jest-dom</code></th>
+<th>Feature</th>
+<th>Controlled</th>
+<th>Uncontrolled</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Simulates the browser’s DOM</td>
-<td>Provides expressive matchers for testing DOM</td>
+<td>State Management</td>
+<td>React state</td>
+<td>DOM via <code>ref</code></td>
 </tr>
 <tr>
-<td>Enables rendering and DOM APIs</td>
-<td>Makes assertions on DOM nodes easier</td>
+<td>Value Binding</td>
+<td><code>value</code> + <code>onChange</code></td>
+<td><code>defaultValue</code></td>
 </tr>
 <tr>
-<td>Used as a test environment in Node</td>
-<td>Extends Jest or Vitest assertion library</td>
+<td>Validation</td>
+<td>Easy</td>
+<td>Requires manual handling</td>
+</tr>
+<tr>
+<td>Real-time Feedback</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Resetting Form</td>
+<td>Update state</td>
+<td>Use DOM manipulation</td>
+</tr>
+<tr>
+<td>Initial Values</td>
+<td>Set via state</td>
+<td>Use <code>defaultValue</code> prop</td>
+</tr>
+<tr>
+<td>Use Case</td>
+<td>Dynamic, interactive forms</td>
+<td>Simple, static forms</td>
 </tr>
 </tbody>
 </table>
-<details class="tip" open="open">
-<summary>In short:</summary>
-<ul>
-<li><code>jsdom</code> <strong>creates the DOM environment</strong> your components run in.</li>
-<li><code>jest-dom</code> <strong>provides nicer assertions</strong> you use to test the DOM elements in that environment.</li>
-</ul>
-</details>
 <hr>
-<h2 id="do-you-always-need-both">Do You Always Need Both?</h2>
-<ul>
-<li><strong>No, but often yes!</strong></li>
-<li>If you test <strong>pure functions or logic without DOM</strong>, you don’t need <code>jsdom</code> or <code>jest-dom</code>.</li>
-<li>If you test <strong>UI components or DOM manipulation</strong>, you need <code>jsdom</code> to simulate the DOM and <code>jest-dom</code> to write readable assertions.</li>
-</ul>
-<hr>
-<h2 id="example-vitest-setup">Example Vitest Setup</h2>
-<div class="language-ts highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">// vitest.config.ts</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">defineConfig</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"vitest/config"</span><span class="p">;</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">defineConfig</span><span class="p">({</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="nx">test</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="nx">environment</span><span class="o">:</span><span class="w"> </span><span class="s2">"jsdom"</span><span class="p">,</span><span class="w"> </span><span class="c1">// enable jsdom environment</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="nx">setupFiles</span><span class="o">:</span><span class="w"> </span><span class="s2">"./setupTests.ts"</span><span class="p">,</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="p">});</span>
-</span></code></pre></div>
-<div class="language-ts highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">// setupTests.ts</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">import</span><span class="w"> </span><span class="s2">"@testing-library/jest-dom"</span><span class="p">;</span><span class="w"> </span><span class="c1">// import jest-dom matchers</span>
-</span></code></pre></div>
-<hr>
-<h2 id="summary">Summary</h2>
+<h2 id="when-to-use-which">🧭 When to Use Which?</h2>
 <table>
 <thead>
 <tr>
-<th>Tool</th>
-<th>Purpose</th>
+<th>Scenario</th>
+<th>Use Controlled</th>
+<th>Use Uncontrolled</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>jsdom</code></td>
-<td>Simulates browser DOM in Node.js tests</td>
+<td>Real-time validation needed</td>
+<td>✅</td>
+<td>❌</td>
 </tr>
 <tr>
-<td><code>@testing-library/jest-dom</code></td>
-<td>Adds readable matchers to assert on DOM nodes</td>
+<td>Pre-fill values dynamically</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Simple, static form</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Form input must be synced with React state</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Minimal logic on form fields</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Input behavior or formatting must be customized</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Performance critical (many uncontrolled fields)</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Third-party integration / uncontrolled data</td>
+<td>❌</td>
+<td>✅</td>
 </tr>
 </tbody>
 </table>
-<p>Using both together helps you write effective and easy-to-understand frontend tests.</p>
-<hr>
-<h2 id="reference">Reference</h2>
+<details class="tip" open="open">
+<summary>✅ Use Controlled Components When:</summary>
 <ul>
-<li><a href="https://victorbruce82.medium.com/vitest-with-react-testing-library-in-react-created-with-vite-3552f0a9a19a">Medium: Vitest with React Testing Library In React(created with Vite)</a></li>
-<li><a href="https://www.robinwieruch.de/vitest-react-testing-library/">Vitest with React Testing Library</a></li>
-<li><a href="https://dev.to/samuel_kinuthia/testing-react-applications-with-vitest-a-comprehensive-guide-2jm8">Testing React Applications with Vitest: A Comprehensive Guide </a></li>
+<li>You need <strong>tight control</strong> over form input values.</li>
+<li>You want to <strong>validate or transform</strong> input as users type.</li>
+<li>You're working with dynamic forms (fields show/hide, change rules).</li>
+<li>You need to <strong>sync input values with state, props, or other logic</strong>.</li>
+</ul>
+</details>
+<details class="note" open="open">
+<summary>🔵 Use Uncontrolled Components When:</summary>
+<ul>
+<li>You need a <strong>quick and simple form</strong>.</li>
+<li>You're building a <strong>form that submits once and forgets</strong>.</li>
+<li>You prefer working with <strong>refs</strong> and DOM elements directly.</li>
+<li>You don’t need to interact with the form data until submission.</li>
+<li>Performance is more important than flexibility (e.g., large forms).</li>
+</ul>
+</details>
+<hr>
+<h2 id="bonus-hybrid-forms">🧩 Bonus: Hybrid Forms</h2>
+<p>Some forms use a <mark>hybrid approach</mark>, combining both controlled and uncontrolled inputs depending on the field.</p>
+<p>Example: Use controlled inputs for fields with validation, and uncontrolled for optional fields where performance is a concern.</p>
+<hr>
+<h2 id="conclusion">🎯 Conclusion</h2>
+<ul>
+<li>
+<p>Use <strong>controlled components</strong> for flexibility, validation, and real-time interactivity.</p>
+</li>
+<li>
+<p>Use <strong>uncontrolled components</strong> for simplicity and performance when you don't need to interact with the input until submission.</p>
+</li>
+<li>
+<p>Understanding when to use each helps you build <strong>cleaner, more maintainable forms</strong> in React.</p>
+</li>
 </ul></div>
 
 
@@ -1116,7 +1158,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../21/choosing-between-jest-vitest-and-react-testing-library/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Choosing Between Jest, Vitest, and React Testing Library">
+          <a href="../../23/controlled-vs-uncontrolled-components-in-react/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Controlled vs Uncontrolled Components in React">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1126,27 +1168,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Choosing Between Jest, Vitest, and React Testing Library
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../../23/controlled-vs-uncontrolled-components-in-react/" class="md-footer__link md-footer__link--next" aria-label="Next: Controlled vs Uncontrolled Components in React">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
                 Controlled vs Uncontrolled Components in React
               </div>
             </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
           </a>
+        
         
       </nav>
     
