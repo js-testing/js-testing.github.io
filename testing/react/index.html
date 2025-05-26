@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://js-testing.github.io/testing/developer-vs-qa/">
+        <link rel="canonical" href="https://js-testing.github.io/testing/react/">
       
       
-        <link rel="prev" href="../types/">
+        <link rel="prev" href="../developer-vs-qa/">
       
-      
-        <link rel="next" href="../react/">
       
       
       <link rel="icon" href="../../assets/logo/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Dev vs QA Role - JS Testing</title>
+        <title>React - JS Testing</title>
       
     
     
@@ -85,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#developer-vs-qa-role-in-testing" class="md-skip">
+        <a href="#introducing-jest" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dev vs QA Role
+              React
             
           </span>
         </div>
@@ -530,6 +528,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer-vs-qa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dev vs QA Role
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -547,7 +568,7 @@
   
   
   <span class="md-ellipsis">
-    Dev vs QA Role
+    React
     
   </span>
   
@@ -560,7 +581,7 @@
   
   
   <span class="md-ellipsis">
-    Dev vs QA Role
+    React
     
   </span>
   
@@ -583,27 +604,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#developers-role" class="md-nav__link">
+  <a href="#adding-jest-as-a-dependency" class="md-nav__link">
     <span class="md-ellipsis">
-      Developer's Role
+      Adding Jest as a Dependency
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#qa-engineers-role" class="md-nav__link">
+  <a href="#running-project-scripts-with-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      QA Engineer's Role
+      Running Project Scripts with npm
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#shared-responsibility" class="md-nav__link">
+  <a href="#writing-a-test" class="md-nav__link">
     <span class="md-ellipsis">
-      Shared Responsibility
+      Writing a Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-tao-of-test-driven-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Tao of Test-Driven Development
     </span>
   </a>
   
@@ -622,29 +652,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../react/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    React
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -684,27 +691,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#developers-role" class="md-nav__link">
+  <a href="#adding-jest-as-a-dependency" class="md-nav__link">
     <span class="md-ellipsis">
-      Developer's Role
+      Adding Jest as a Dependency
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#qa-engineers-role" class="md-nav__link">
+  <a href="#running-project-scripts-with-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      QA Engineer's Role
+      Running Project Scripts with npm
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#shared-responsibility" class="md-nav__link">
+  <a href="#writing-a-test" class="md-nav__link">
     <span class="md-ellipsis">
-      Shared Responsibility
+      Writing a Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-tao-of-test-driven-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Tao of Test-Driven Development
     </span>
   </a>
   
@@ -735,67 +751,94 @@
 
 
 
-<div><h1 id="developer-vs-qa-role-in-testing">Developer vs QA role in testing</h1>
-<p>In React development, the responsibility for writing unit tests, integration tests, and end-to-end (E2E) tests can vary depending on the team's structure and workflow. However, here is a general breakdown:</p>
+<div><h1 id="introducing-jest">Introducing Jest</h1>
+<p>Jest is a test framework developed by Meta (née Facebook). Thanks to its rich feature set and solid performance, it’s become the most popular library for testing JavaScript code in recent years.</p>
+<details class="tip" open="open">
+<summary>Jest vs. Vitest</summary>
+<p>This chapter introduces you to testing with Jest, due to its popularity and ease of setup. However, later chapters will use Vitest, a Jest alternative that offers even faster performance when used in tandem with the Vite build tool. Vitest is designed for compatibility with tests written for Jest, so rest assured that the knowledge you pick up in this chapter will carry over!</p>
+</details>
+<p>Unlike its forerunners, which expect to run in a browser environment, Jest runs in a Node process.</p>
+<h2 id="adding-jest-as-a-dependency">Adding Jest as a Dependency</h2>
+<p>Use npm to install the jest package:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$<span class="w"> </span>npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>jest@29.4.3
+</span></code></pre></div>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// package.json</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">...</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="s2">"devDependencies"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="s2">"jest"</span><span class="o">:</span><span class="w"> </span><span class="s2">"^29.4.3"</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">}</span>
+</span></code></pre></div>
+<details class="tip" open="open">
+<summary>What Does the Caret (^) Before Version Numbers Mean?</summary>
+<p>By default, npm lists dependencies in <code>package.json</code> with a caret (<code>^</code>). The caret creates a version range that allows for minor updates and patches. So, <code>jest@^29.4.3</code> includes any version of <code>jest</code> from version <code>29.4.3</code> up to, but not including, <code>30.0.0</code>. According to <code>semver</code> principles, newer versions in that range should be backward compatible because package authors should bump the major version when making any breaking change. But be warned—package authors often ignore semver principles!</p>
+<p>Fortunately, the other file <code>npm</code> created, <code>package-lock.json</code>, stores the exact version that was installed. As long as that lockfile is preserved, anyone who installs the project will get the exact same version of <code>jest</code> that you did. Put another way, <code>npm install</code> gives <code>package-lock.json</code> precedence over <code>package.json</code>. To install the latest version allowed by <code>package.json</code>, use the <code>npm update</code> command.</p>
+</details>
+<p>Now Jest is installed and ready for you to use. However, it’s in the project’s <code>node_modules</code>, not on your PATH. To run it, you’ll need to call on another tool—npx.</p>
 <hr>
-<h2 id="developers-role">Developer's Role</h2>
-<p>React developers are typically <mark>responsible for writing</mark> <strong>unit tests</strong> and <strong>integration tests</strong>:</p>
-<ul>
-<li>
-<p><strong>Unit Tests</strong>: These test individual components in isolation to ensure they function as expected (e.g., testing button clicks or state changes). Developers often use tools like Jest and React Testing Library for these tests.</p>
-</li>
-<li>
-<p><strong>Integration Tests</strong>: These verify how multiple components interact with each other, ensuring proper functionality when components work together. Developers usually handle these tests as part of their coding workflow.</p>
-</li>
-</ul>
+<h2 id="running-project-scripts-with-npm">Running Project Scripts with npm</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>npx<span class="w"> </span>jest<span class="w"> </span>--version
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="m">29</span>.4.3
+</span></code></pre></div>
+<p>The test script is special to npm; you can execute it with either <code>npm run test</code> or just <code>npm test</code>. You should see the same output that you got with npx jest:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>npm<span class="w"> </span><span class="nb">test</span>
+</span></code></pre></div>
+<p>No tests found, exiting with code 1</p>
 <hr>
-<h2 id="qa-engineers-role">QA Engineer's Role</h2>
-<p>Quality Assurance (QA) engineers focus more on <mark>end-to-end (E2E) testing</mark> and overall application quality:</p>
-<ul>
+<h2 id="writing-a-test">Writing a Test</h2>
+<p>Time for your first test! Create a file called greeting.test.js:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// greeting.test.js</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">greeting</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">guest</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">guest</span><span class="si">}</span><span class="sb">!`</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nx">describe</span><span class="p">(</span><span class="s2">"greeting()"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nx">it</span><span class="p">(</span><span class="s2">"says hello"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="nx">expect</span><span class="p">(</span><span class="nx">greeting</span><span class="p">(</span><span class="s2">"Jest"</span><span class="p">)).</span><span class="nx">toBe</span><span class="p">(</span><span class="s2">"Hello, Jest!"</span><span class="p">);</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="p">});</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">});</span>
+</span></code></pre></div>
+<ol>
 <li>
-<p><strong>E2E Tests</strong>: These simulate real user behavior across the entire application to ensure it works as intended in real-world scenarios. QA engineers typically design and execute these tests using tools like Cypress or Selenium.</p>
+<p><code>describe()</code> declares a test suite, which is a grouping of tests. Its first argument is a name, and the second is a function containing one or more tests.</p>
 </li>
 <li>
-<p>QA engineers also document testing phases, report bugs, and collaborate with developers to troubleshoot issues.</p>
+<p><code>it()</code> declares a test. Its first argument is a name, and the second is a function with the actual test code.</p>
 </li>
-</ul>
+<li>
+<p><code>expect()</code> creates an assertion. It takes a single argument, typically a value generated by the code being tested, and returns an object that provides a set of matcher functions.</p>
+</li>
+<li>
+<p><code>toBe()</code> is a matcher that performs a strict equality test between the value being tested (the <code>expect()</code> argument) and the expected value (its own argument).</p>
+</li>
+</ol>
+<p>Note the grammatical convention here: the test suite name ("<code>greeting()</code>") is a <mark>noun</mark>, and the test name ("<code>says hello</code>") is a <mark>verb</mark>. Together, they form a complete sentence describing the functionality covered by the test ("<code>greeting()</code> says hello").</p>
+<p>This convention helps make test output easy to read. You can learn more about all of these methods in the Jest API docs.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$<span class="w"> </span>npm<span class="w"> </span><span class="nb">test</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>PASS<span class="w"> </span>./greeting.test.js
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span>greeting<span class="o">()</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">        </span>✓<span class="w"> </span>says<span class="w"> </span>hello<span class="w"> </span><span class="o">(</span><span class="m">1</span><span class="w"> </span>ms<span class="o">)</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>Test<span class="w"> </span>Suites:<span class="w"> </span><span class="m">1</span><span class="w"> </span>passed,<span class="w"> </span><span class="m">1</span><span class="w"> </span>total
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>Tests:
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="m">1</span><span class="w"> </span>passed,<span class="w"> </span><span class="m">1</span><span class="w"> </span>total
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>Snapshots:
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="m">0</span><span class="w"> </span>total
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>Time:
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="m">0</span>.159<span class="w"> </span>s
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>Ran<span class="w"> </span>all<span class="w"> </span><span class="nb">test</span><span class="w"> </span>suites
+</span></code></pre></div>
+<p>Excellent! Jest found the test file, ran the test, and confirmed that <code>greeting('Jest')</code> produces the string '<code>Hello, Jest!</code>'.</p>
+<p>You can go ahead and delete <code>greeting.test.js</code>:</p>
 <hr>
-<h2 id="shared-responsibility">Shared Responsibility</h2>
-<p>In modern <strong>DevOps</strong> environments, testing responsibilities are often shared:</p>
-<ul>
-<li>
-<p>Developers are involved in early-stage testing to catch bugs during development.</p>
-</li>
-<li>
-<p>QA engineers ensure the application meets defined quality standards before release.</p>
-</li>
-</ul>
-<p>As a React developer, you should focus on unit and integration tests but may occasionally contribute to E2E testing, especially in smaller teams without dedicated QA personnel.</p>
-<hr>
-<ul>
-<li>Test behaviour, not the implementation</li>
-<li>Refactoring shouldn't break tests</li>
-</ul>
-<p>by - <a href="https://dev.to/tlakomy/what-i-ve-learned-about-testing-react-apps-part-1-55g7">What I've Learned About Testing React Apps - Unit Tests </a></p>
+<h2 id="the-tao-of-test-driven-development">The Tao of Test-Driven Development</h2>
+<p>Test-driven development (TDD) is sometimes defined as writing tests first.</p>
+<p>Although that’s an important part of the methodology, it’s not the essence. The essence of TDD is rapid iteration. You’ll find that you learn more quickly from iterating—writing small, easy-to-understand pieces of code one at a time—than you would from trying to plan out a complex program from the ground up.</p>
 <hr>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://coderpad.io/blog/development/how-to-write-integration-tests-with-jest-and-react-testing-library/">How To Write Integration Tests With Jest And React Testing Library</a></li>
-<li><a href="https://www.browserstack.com/guide/react-testing-tutorial">React Testing: How to test React components?</a></li>
-<li><a href="https://www.cronj.com/blog/guide-to-hiring-a-react-developer-with-testing-and-qa-skills/">Guide to Hiring a React Developer with Testing and QA Skills</a></li>
-<li>
-<p><a href="https://dev.to/tlakomy/what-i-ve-learned-about-testing-react-apps-part-1-55g7">What I've Learned About Testing React Apps - Unit Tests</a></p>
-</li>
-<li>
-<p><a href="https://about.codecov.io/blog/understanding-the-roles-in-quality-assurance/">Understanding the Roles in Quality Assurance</a></p>
-</li>
-<li><a href="https://resources.workable.com/qa-tester-job-description">QA Tester job description</a></li>
-<li>
-<p><a href="https://www.coursera.org/articles/qa-tester">What Is a QA Tester?</a></p>
-</li>
-<li>
-<p><a href="https://circleci.com/blog/what-is-end-to-end-testing/">What is E2E? A guide to end-to-end testing</a></p>
-</li>
+<li><a href="#">Test-Driven React, 2nd Edition by Trevor Burnham</a></li>
 </ul></div>
 
 
@@ -832,7 +875,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../types/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Types">
+          <a href="../developer-vs-qa/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Dev vs QA Role">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -842,27 +885,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Types
+                Dev vs QA Role
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../react/" class="md-footer__link md-footer__link--next" aria-label="Next: React">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                React
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     

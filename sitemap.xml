@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://js-testing.github.io/</loc>
-         <lastmod>2025-04-25</lastmod>
+         <lastmod>2025-05-26</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/blog/</loc>
-         <lastmod>2025-04-25</lastmod>
+         <lastmod>2025-05-26</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/testing/developer-vs-qa/</loc>
-         <lastmod>2025-04-25</lastmod>
+         <lastmod>2025-05-26</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/testing/intro/</loc>
-         <lastmod>2025-04-25</lastmod>
+         <lastmod>2025-05-26</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/testing/react/</loc>
+         <lastmod>2025-05-26</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/testing/types/</loc>
-         <lastmod>2025-04-25</lastmod>
+         <lastmod>2025-05-26</lastmod>
     </url>
 </urlset>
