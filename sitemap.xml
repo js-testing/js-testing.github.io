@@ -9,6 +9,14 @@
          <lastmod>2025-05-26</lastmod>
     </url>
     <url>
+         <loc>https://js-testing.github.io/blog/2025/05/21/choosing-between-jest-vitest-and-react-testing-library/</loc>
+         <lastmod>2025-05-26</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/blog/2025/05/22/understanding-the-difference-between-jsdom-and-testing-libraryjest-dom/</loc>
+         <lastmod>2025-05-26</lastmod>
+    </url>
+    <url>
          <loc>https://js-testing.github.io/testing/developer-vs-qa/</loc>
          <lastmod>2025-05-26</lastmod>
     </url>
@@ -22,6 +30,18 @@
     </url>
     <url>
          <loc>https://js-testing.github.io/testing/types/</loc>
+         <lastmod>2025-05-26</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/blog/archive/2025/</loc>
+         <lastmod>2025-05-26</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/blog/category/frontend/</loc>
+         <lastmod>2025-05-26</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/blog/category/testing/</loc>
          <lastmod>2025-05-26</lastmod>
     </url>
 </urlset>
