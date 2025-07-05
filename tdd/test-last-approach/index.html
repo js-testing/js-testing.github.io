@@ -14,6 +14,8 @@
         <link rel="prev" href="../approach/">
       
       
+        <link rel="next" href="../characterization-testing/">
+      
       
       <link rel="icon" href="../../assets/logo/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
@@ -887,6 +889,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../tdd-styles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TDD Styles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../folder-structure/" class="md-nav__link">
         
   
@@ -1047,10 +1072,266 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refactoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Refactoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-test-last-with-characterization-works-for-refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Why Test-Last (with Characterization) Works for Refactoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-to-do-practical-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ What to Do: Practical Steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ What to Do: Practical Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-write-characterization-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Write Characterization Tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-refactor-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Refactor the Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uncle-bobs-advice-on-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Uncle Bob's Advice on This
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Quick Guidelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-verdict" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Final Verdict
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#characterization-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Characterization Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Characterization Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-characterization-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 What is a Characterization Test?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-characterization-testing-for-refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Step-by-Step: Characterization Testing for Refactoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Step-by-Step: Characterization Testing for Refactoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Scenario:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-add-a-characterization-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Step 1: Add a Characterization Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-refactor-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Step 2: Refactor the Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-rinse-and-repeat" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Step 3: Rinse and Repeat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-messy-function-refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 Example: Messy Function Refactoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔁 Example: Messy Function Refactoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-ugly-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 Before (ugly logic)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write-characterization-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Write Characterization Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refactor-confidently" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧼 Refactor Confidently
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Benefits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../characterization-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Characterization Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../react-tdd-style/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    React TDD Style
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1131,6 +1412,216 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Refactoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Refactoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-test-last-with-characterization-works-for-refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Why Test-Last (with Characterization) Works for Refactoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-to-do-practical-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ What to Do: Practical Steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ What to Do: Practical Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-write-characterization-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Write Characterization Tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-refactor-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Refactor the Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uncle-bobs-advice-on-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Uncle Bob's Advice on This
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Quick Guidelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-verdict" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Final Verdict
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#characterization-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Characterization Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Characterization Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-characterization-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 What is a Characterization Test?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-characterization-testing-for-refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Step-by-Step: Characterization Testing for Refactoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Step-by-Step: Characterization Testing for Refactoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Scenario:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-add-a-characterization-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Step 1: Add a Characterization Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-refactor-the-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Step 2: Refactor the Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-rinse-and-repeat" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Step 3: Rinse and Repeat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-messy-function-refactoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 Example: Messy Function Refactoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔁 Example: Messy Function Refactoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-ugly-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 Before (ugly logic)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#write-characterization-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Write Characterization Test
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refactor-confidently" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧼 Refactor Confidently
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Benefits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1183,7 +1674,155 @@
 </ul>
 <hr>
 <h3 id="test-last-is-not-traditional-tdd">🚫 Test-Last Is Not Traditional TDD</h3>
-<p>Even though people call it "test-last" in some TDD circles, it's technically not TDD in the strict sense, because TDD requires writing the test first to drive development. But it's a practical approach in real-world projects, especially with legacy systems.</p></div>
+<p>Even though people call it "test-last" in some TDD circles, it's technically not TDD in the strict sense, because TDD requires writing the test first to drive development. But it's a practical approach in real-world projects, especially with legacy systems.</p>
+<hr>
+<h2 id="refactoring">Refactoring</h2>
+<p>Yes, you <strong>can—and often should—use a test-last approach</strong> when you're dealing with <em>an already built application</em> that needs <mark>refactoring</mark>. But there’s an important nuance: you're not just writing tests last, you're writing <strong><em>characterization tests</em></strong> first—before refactoring.</p>
+<hr>
+<h3 id="why-test-last-with-characterization-works-for-refactoring">🧪 Why Test-Last (with Characterization) Works for Refactoring</h3>
+<p>When the app already exists:</p>
+<ol>
+<li><strong>You don’t want to change behavior yet</strong>.</li>
+<li>So you write tests that <mark>capture what the system currently does</mark>—even if the behavior is wrong or messy.</li>
+<li>Once you have those tests in place, you can refactor with confidence.</li>
+</ol>
+<p>This technique is central to <mark>legacy code refactoring</mark>.</p>
+<hr>
+<h3 id="what-to-do-practical-steps">✅ What to Do: Practical Steps</h3>
+<h4 id="1-write-characterization-tests">1. Write Characterization Tests</h4>
+<blockquote>
+<p>Tests that describe <em>what the system does now</em>, not what it should ideally do.</p>
+</blockquote>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// BEFORE: messy or unclear code</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">legacyFunction</span><span class="p">(</span><span class="s2">"abc"</span><span class="p">);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">expect</span><span class="p">(</span><span class="nx">result</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s2">"abc_xyz"</span><span class="p">);</span><span class="w"> </span><span class="c1">// even if that behavior is weird, capture it</span>
+</span></code></pre></div>
+<h4 id="2-refactor-the-code">2. Refactor the Code</h4>
+<p>Now, with those tests guarding you, start cleaning up:</p>
+<ul>
+<li>Extract methods</li>
+<li>Rename variables</li>
+<li>Break dependencies</li>
+<li>Improve structure</li>
+</ul>
+<p>If a test fails, you’ll know you've changed behavior—and can stop to decide if that’s okay.</p>
+<hr>
+<h3 id="uncle-bobs-advice-on-this">📘 Uncle Bob's Advice on This</h3>
+<p>Uncle Bob strongly supports writing tests <mark>before refactoring</mark>, even in test-last scenarios:</p>
+<blockquote>
+<p>"You cannot refactor without tests. If you try, you are just changing code blindly and hoping it still works." — Robert C. Martin</p>
+</blockquote>
+<p>His book “<strong>Working Effectively with Legacy Code</strong>” (by Michael Feathers, which he endorses) emphasizes this strategy heavily.</p>
+<hr>
+<h3 id="quick-guidelines">🧠 Quick Guidelines</h3>
+<table>
+<thead>
+<tr>
+<th>Refactoring Scenario</th>
+<th>Suggested Testing Approach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code already exists</td>
+<td>✅ Characterization tests (Test-Last)</td>
+</tr>
+<tr>
+<td>New functionality</td>
+<td>✅ Use Test-First (TDD)</td>
+</tr>
+<tr>
+<td>Unknown behavior / bugs</td>
+<td>🕵️ Add tests to lock current behavior</td>
+</tr>
+<tr>
+<td>High-risk change</td>
+<td>🛡 Add integration/system-level tests</td>
+</tr>
+</tbody>
+</table>
+<h3 id="final-verdict">✅ Final Verdict</h3>
+<p><mark>Yes</mark>, you can use a <mark>test-last approach when refactoring existing code</mark> — but do so deliberately and strategically:</p>
+<ul>
+<li>Focus on <strong>characterizing</strong> current behavior first.</li>
+<li>Then refactor safely with confidence.</li>
+<li>Once code is clean, consider shifting to <strong>TDD</strong> for new changes.</li>
+</ul>
+<hr>
+<h2 id="characterization-test">Characterization Test</h2>
+<h3 id="what-is-a-characterization-test">🧪 What is a Characterization Test?</h3>
+<p>A characterization test is written <em>after the code exists</em> but <strong><em>before you refactor</em></strong>. Its goal is to <mark>capture the current behavior</mark> — e<em>ven if that behavior is wrong or ugly</em> — so you can safely refactor without changing it accidentally.</p>
+<hr>
+<h3 id="step-by-step-characterization-testing-for-refactoring">🔧 Step-by-Step: Characterization Testing for Refactoring</h3>
+<h4 id="scenario">🎯 Scenario:</h4>
+<p>You have a legacy function that formats user data:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// legacy.js</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">formatUser</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">user</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"-"</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">user</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">"yrs"</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Your goal: <strong>refactor it to be more readable.</strong></p>
+<hr>
+<h4 id="step-1-add-a-characterization-test">✅ Step 1: Add a Characterization Test</h4>
+<p>Use your testing framework (e.g. Jest):</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// legacy.test.js</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">formatUser</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">"./legacy"</span><span class="p">);</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nx">test</span><span class="p">(</span><span class="s2">"formatUser returns name-ageyrs format"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">formatUser</span><span class="p">(</span><span class="nx">input</span><span class="p">);</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="nx">expect</span><span class="p">(</span><span class="nx">result</span><span class="p">).</span><span class="nx">toBe</span><span class="p">(</span><span class="s2">"Alice-30yrs"</span><span class="p">);</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">});</span>
+</span></code></pre></div>
+<blockquote>
+<p>This test “locks in” the current behavior.</p>
+</blockquote>
+<hr>
+<h4 id="step-2-refactor-the-code">✅ Step 2: Refactor the Code</h4>
+<p>Once that test passes, you can safely refactor:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// REFACTORED: legacy.js</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">formatUser</span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">-</span><span class="si">${</span><span class="nx">age</span><span class="si">}</span><span class="sb">yrs`</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>The test still passes ✅ — you’ve changed the implementation without altering behavior.</p>
+<hr>
+<h4 id="step-3-rinse-and-repeat">✅ Step 3: Rinse and Repeat</h4>
+<ul>
+<li>Keep writing tests around legacy functions.</li>
+<li>Extract small pieces.</li>
+<li>Once you feel safe, improve names, split responsibilities, remove duplication.</li>
+</ul>
+<hr>
+<h3 id="example-messy-function-refactoring">🔁 Example: Messy Function Refactoring</h3>
+<h4 id="before-ugly-logic">🧱 Before (ugly logic)</h4>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">discount</span><span class="p">(</span><span class="nx">price</span><span class="p">,</span><span class="w"> </span><span class="nx">customer</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">customer</span><span class="p">.</span><span class="nx">status</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"VIP"</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">price</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.7</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">customer</span><span class="p">.</span><span class="nx">status</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"Regular"</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">price</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.9</span><span class="p">;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">price</span><span class="p">;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<h4 id="write-characterization-test">🧪 Write Characterization Test</h4>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nx">test</span><span class="p">(</span><span class="s2">"VIP customers get 30% off"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nx">expect</span><span class="p">(</span><span class="nx">discount</span><span class="p">(</span><span class="mf">100</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">status</span><span class="o">:</span><span class="w"> </span><span class="s2">"VIP"</span><span class="w"> </span><span class="p">})).</span><span class="nx">toBe</span><span class="p">(</span><span class="mf">70</span><span class="p">);</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">});</span>
+</span></code></pre></div>
+<h4 id="refactor-confidently">🧼 Refactor Confidently</h4>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">discount</span><span class="p">(</span><span class="nx">price</span><span class="p">,</span><span class="w"> </span><span class="nx">customer</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">discounts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">VIP</span><span class="o">:</span><span class="w"> </span><span class="mf">0.7</span><span class="p">,</span><span class="w"> </span><span class="nx">Regular</span><span class="o">:</span><span class="w"> </span><span class="mf">0.9</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">price</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="nx">discounts</span><span class="p">[</span><span class="nx">customer</span><span class="p">.</span><span class="nx">status</span><span class="p">]</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Test still passes? ✅ You’re safe.</p>
+<hr>
+<h3 id="benefits">🔒 Benefits</h3>
+<ul>
+<li>Protects against <strong>breaking existing behavior</strong></li>
+<li>Enables safe, incremental <strong>refactoring</strong></li>
+<li>Helps you <strong>understand</strong> confusing or undocumented legacy cod</li>
+</ul>
+<hr></div>
 
 
 
@@ -1234,6 +1873,22 @@
             </div>
           </a>
         
+        
+          
+          <a href="../characterization-testing/" class="md-footer__link md-footer__link--next" aria-label="Next: Characterization Testing">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Characterization Testing
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

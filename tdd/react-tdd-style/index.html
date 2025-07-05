@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://js-testing.github.io/tdd/approach/">
+        <link rel="canonical" href="https://js-testing.github.io/tdd/react-tdd-style/">
       
       
-        <link rel="prev" href="../example/">
+        <link rel="prev" href="../characterization-testing/">
       
-      
-        <link rel="next" href="../test-last-approach/">
       
       
       <link rel="icon" href="../../assets/logo/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Approach - JS Testing</title>
+        <title>React TDD Style - JS Testing</title>
       
     
     
@@ -85,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#approach" class="md-skip">
+        <a href="#react-tdd-style-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Approach
+              React TDD Style
             
           </span>
         </div>
@@ -955,32 +953,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Approach
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../approach/" class="md-nav__link">
         
   
   
@@ -991,95 +967,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#quick-guidelines" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 Quick Guidelines
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#uncle-bob-on-test-first-vs-test-last" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Uncle Bob on Test-First vs Test-Last
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Uncle Bob on Test-First vs Test-Last">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#test-first-tdd-proper" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Test-First (TDD proper)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-last-not-tdd" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧪 Test-Last (not TDD)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#which-approach-should-you-choose" class="md-nav__link">
-    <span class="md-ellipsis">
-      💡 Which Approach Should You Choose?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#final-thoughts" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ Final Thoughts
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1135,10 +1022,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../react-tdd-style/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    React TDD Style
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1149,6 +1058,164 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#most-common-chicago-style-tdd" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Most Common: Chicago-Style TDD
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Most Common: Chicago-Style TDD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-its-popular-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Why it's popular in React
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-chicago-style-react-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Example: Chicago-Style React Test
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-tools-for-chicago-tdd-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧰 Recommended Tools for Chicago TDD in React
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-tdd-styles-in-react-used-less-frequently" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤝 Other TDD Styles in React (Used Less Frequently)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#where-chicago-style-tdd-applies-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Where Chicago-Style TDD Applies in React
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-component-tests-most-common" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 1. Component Tests (Most Common)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-custom-hook-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 2. Custom Hook Tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-utility-logic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      📐 3. Utility / Logic Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-it-avoids" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 What It Avoids
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-it-mixes-with-other-styles" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 When It Mixes with Other Styles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1188,64 +1255,133 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#quick-guidelines" class="md-nav__link">
+  <a href="#most-common-chicago-style-tdd" class="md-nav__link">
     <span class="md-ellipsis">
-      🧠 Quick Guidelines
+      ✅ Most Common: Chicago-Style TDD
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Most Common: Chicago-Style TDD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-its-popular-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Why it's popular in React
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-chicago-style-react-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Example: Chicago-Style React Test
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-tools-for-chicago-tdd-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧰 Recommended Tools for Chicago TDD in React
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#uncle-bob-on-test-first-vs-test-last" class="md-nav__link">
+  <a href="#other-tdd-styles-in-react-used-less-frequently" class="md-nav__link">
     <span class="md-ellipsis">
-      🛠️ Uncle Bob on Test-First vs Test-Last
+      🤝 Other TDD Styles in React (Used Less Frequently)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🛠️ Uncle Bob on Test-First vs Test-Last">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#test-first-tdd-proper" class="md-nav__link">
+  <a href="#where-chicago-style-tdd-applies-in-react" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Test-First (TDD proper)
+      ✅ Where Chicago-Style TDD Applies in React
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#test-last-not-tdd" class="md-nav__link">
+  <a href="#1-component-tests-most-common" class="md-nav__link">
     <span class="md-ellipsis">
-      🧪 Test-Last (not TDD)
+      🔍 1. Component Tests (Most Common)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#which-approach-should-you-choose" class="md-nav__link">
+  <a href="#2-custom-hook-tests" class="md-nav__link">
     <span class="md-ellipsis">
-      💡 Which Approach Should You Choose?
+      🔁 2. Custom Hook Tests
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#3-utility-logic-functions" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      📐 3. Utility / Logic Functions
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#final-thoughts" class="md-nav__link">
+  <a href="#what-it-avoids" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Final Thoughts
+      🧠 What It Avoids
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-it-mixes-with-other-styles" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 When It Mixes with Other Styles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Summary
     </span>
   </a>
   
@@ -1272,193 +1408,214 @@
 
 
 
-<div><h1 id="approach">Approach</h1>
-<details class="tip" open="open">
-<summary>📘 Uncle Bob's Advice on This</summary>
-<p>Uncle Bob strongly supports writing tests <strong>before refactoring</strong>, even in test-last scenarios:</p>
-<div class="language-text highlight"><pre><span></span><code>&gt; "You cannot refactor without tests. If you try, you are just changing code blindly and hoping it still works."
-—Robert C. Martin
-</code></pre></div>
-<p>His book “<strong>Working Effectively with Legacy Code</strong>” (by Michael Feathers, which he endorses) emphasizes this strategy heavily.</p>
-</details>
+<div><h1 id="react-tdd-style-guide">React TDD Style Guide</h1>
+<p>In React applications, the most common and effective TDD style is <strong>Chicago-style TDD</strong>, also known as <strong>Detroit-style</strong>. This approach focuses on testing logic, state, and visible behavior without relying heavily on mocks or testing internal implementation details.</p>
 <hr>
-<h2 id="quick-guidelines">🧠 Quick Guidelines</h2>
+<h2 id="most-common-chicago-style-tdd">✅ Most Common: Chicago-Style TDD</h2>
+<h3 id="why-its-popular-in-react">🔍 Why it's popular in React</h3>
 <table>
 <thead>
 <tr>
-<th>Refactoring Scenario</th>
-<th>Suggested Testing Approach</th>
+<th>Reason</th>
+<th>Explanation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Code already exists</td>
-<td>✅ Characterization tests (Test-Last)</td>
+<td><strong>React favors pure logic</strong></td>
+<td>Components and hooks are often functional and deterministic — perfect for input/output testing.</td>
 </tr>
 <tr>
-<td>New functionality</td>
-<td>✅ Use Test-First (TDD)</td>
+<td><strong>Encouraged by React Testing Library</strong></td>
+<td>RTL promotes testing what the user sees, not implementation details.</td>
 </tr>
 <tr>
-<td>Unknown behavior / bugs</td>
-<td>🕵️ Add tests to lock current behavior</td>
+<td><strong>Minimal mocking</strong></td>
+<td>Most React logic doesn’t require mocks unless dealing with APIs or services.</td>
 </tr>
 <tr>
-<td>High-risk change</td>
-<td>🛡 Add integration/system-level tests</td>
+<td><strong>More maintainable tests</strong></td>
+<td>Chicago-style tests are less brittle and easier to understand.</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="uncle-bob-on-test-first-vs-test-last">🛠️ Uncle Bob on Test-First vs Test-Last</h2>
-<hr>
-<h3 id="test-first-tdd-proper">✅ Test-First (TDD proper)</h3>
-<ul>
-<li>
-<p><strong>Red/Green/Refactor</strong> cycle: write a failing test, then code to pass it, then refactor—following the Three Laws.</p>
-</li>
-<li>
-<p>Treats tests as <em>executable specifications</em>. They guide the code design and drive modular, decoupled architecture.</p>
-</li>
-<li>
-<p>Emphasis on keeping tests <strong>F.I.R.S.T</strong> (Fast, Independent, Repeatable, Self-validating, Timely) to maintain rapid feedback.</p>
-</li>
-<li>
-<p>Encourages <strong>outside-in</strong> design using test doubles (London style) to mock slow parts and focus design.</p>
-</li>
-<li>
-<p><strong>Transformation Priority Premise</strong> helps choose simple transformations first, making the implementation process clearer.</p>
-</li>
-</ul>
-<details class="tip" open="open">
-<summary>Occurs:</summary>
-<blockquote>
-<p>Before writing any implementation code.</p>
-</blockquote>
-<p>Steps:</p>
-<ol>
-<li><strong>Write a failing test</strong> — Describe the expected behavior or output of a component or function.</li>
-<li><strong>Run the test</strong> — Confirm that it fails (this ensures the test is valid).</li>
-<li><strong>Write the minimal code</strong> — Implement just enough to make the test pass.</li>
-<li><strong>Run the test again</strong> — It should now pass.</li>
-<li><strong>Refactor</strong> — Clean up the code while keeping tests green.</li>
-</ol>
-<div class="language-js highlight"><span class="filename">Example</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Test (written first)</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">test</span><span class="p">(</span><span class="s1">'Button displays correct label'</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">Button</span><span class="w"> </span><span class="nx">label</span><span class="o">=</span><span class="s2">"Click me"</span><span class="w"> </span><span class="o">/&gt;</span><span class="p">);</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nx">expect</span><span class="p">(</span><span class="nx">screen</span><span class="p">.</span><span class="nx">getByText</span><span class="p">(</span><span class="s1">'Click me'</span><span class="p">)).</span><span class="nx">toBeInTheDocument</span><span class="p">();</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">});</span>
+<h3 id="example-chicago-style-react-test">🧪 Example: Chicago-Style React Test</h3>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">render</span><span class="p">,</span><span class="w"> </span><span class="nx">screen</span><span class="p">,</span><span class="w"> </span><span class="nx">fireEvent</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@testing-library/react"</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">LoginForm</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./LoginForm"</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nx">test</span><span class="p">(</span><span class="s2">"disables submit when fields are empty"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nx">render</span><span class="p">(&lt;</span><span class="nt">LoginForm</span><span class="w"> </span><span class="p">/&gt;);</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">screen</span><span class="p">.</span><span class="nx">getByRole</span><span class="p">(</span><span class="s2">"button"</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="sr">/login/i</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nx">expect</span><span class="p">(</span><span class="nx">button</span><span class="p">).</span><span class="nx">toBeDisabled</span><span class="p">();</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">});</span>
 </span></code></pre></div>
-</details>
-<hr>
-<h3 id="test-last-not-tdd">🧪 Test-Last (not TDD)</h3>
 <ul>
-<li>
-<p>You write the bulk of production code first; tests come later.</p>
-</li>
-<li>
-<p>Less guidance; code may evolve without early constraints, possibly leading to tightly coupled or untestable designs.</p>
-</li>
-<li>
-<p>Easier to slip into without discipline, but risking long build times and lower test coverage.</p>
-</li>
-<li>
-<p>Tends to miss the benefits of early abstraction, clean architecture, and design-for-testability.</p>
-</li>
+<li>✅ Tests the <strong>behavior</strong>, not implementation</li>
+<li>✅ No mocking required</li>
+<li>✅ Reflects actual user interaction</li>
 </ul>
-<details class="tip" open="open">
-<summary>Occurs:</summary>
+<hr>
+<h2 id="recommended-tools-for-chicago-tdd-in-react">🧰 Recommended Tools for Chicago TDD in React</h2>
+<ul>
+<li><a href="#">React Testing Library</a> – For testing DOM behavior and interactions</li>
+<li><a href="#">Jest</a> – For test running, assertions, and basic mocking</li>
+<li><a href="#">Vitest</a> – (Optional) Faster alternative to Jest in Vite-based apps</li>
+</ul>
+<hr>
+<h2 id="other-tdd-styles-in-react-used-less-frequently">🤝 Other TDD Styles in React (Used Less Frequently)</h2>
+<table>
+<thead>
+<tr>
+<th>Style</th>
+<th>When It's Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>London Style</strong></td>
+<td>When isolating external services (e.g., mocking API or auth services)</td>
+</tr>
+<tr>
+<td><strong>Component TDD</strong></td>
+<td>When developing reusable, stylized UI components</td>
+</tr>
+<tr>
+<td><strong>BDD / ATDD</strong></td>
+<td>In end-to-end testing with Cypress, Playwright, or Gherkin</td>
+</tr>
+<tr>
+<td><strong>Integration TDD</strong></td>
+<td>When testing full flows (e.g., login → dashboard → profile)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="summary">🧠 Summary</h2>
+<ul>
+<li><mark>Chicago-style TDD is the dominant testing style in React</mark> for unit and component testing.</li>
+<li>It aligns with how React encourages component composition and behavior-driven UI.</li>
+<li>Use other styles (London, BDD, integration) <strong>selectively</strong> where appropriate.</li>
+</ul>
 <blockquote>
-<p>After writing implementation code.</p>
+<p><mark>Test behavior, not implementation</mark>. Let the user’s experience guide your tests.</p>
 </blockquote>
-<ul>
-<li>You write a component or function first.</li>
-<li>Then, you write tests to cover what you've already implemented.</li>
-<li>This is not TDD, but still a form of testing (often called test-after or test-last development).</li>
-</ul>
 <hr>
-<ul>
-<li><strong>🚫 Not TDD, but better than no tests.</strong></li>
-<li>✅ Can be useful during legacy refactoring or prototyping.</li>
-</ul>
-</details>
-<hr>
-<h3 id="which-approach-should-you-choose">💡 Which Approach Should You Choose?</h3>
+<h2 id="example">Example</h2>
+<p>In a React application, Chicago-style TDD focuses on testing the following key areas:</p>
+<h3 id="where-chicago-style-tdd-applies-in-react">✅ Where Chicago-Style TDD Applies in React</h3>
 <table>
 <thead>
 <tr>
-<th>Scenario</th>
-<th>Recommendation</th>
-<th>Why</th>
+<th>Layer</th>
+<th>What It Tests</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Want cleaner design &amp; rapid refactoring</td>
-<td><strong>Test‑First (TDD)</strong></td>
-<td>Acts as built-in spec, encourages testable, modular code, and keeps cycle tight and safe.</td>
+<td>🧩 <strong>Components</strong></td>
+<td>DOM output, state, props</td>
+<td>Button disabled/enabled, input value changes</td>
 </tr>
 <tr>
-<td>Working under time pressure or on exploratory code</td>
-<td><strong>Test‑Last</strong> (with caution)</td>
-<td>Offers faster progress but risks technical debt and brittle code if tests delayed too long.</td>
+<td>⚙️ <strong>Hooks</strong></td>
+<td>State transitions, return values</td>
+<td>Custom <code>useCounter</code>, <code>useToggle</code></td>
 </tr>
 <tr>
-<td>Maintaining existing legacy code</td>
-<td><strong>Hybrid</strong></td>
-<td>Add tests where needed, but gradually adopt TDD for new features.</td>
-</tr>
-<tr>
-<td>User-facing behavior / system flow</td>
-<td>Use <strong>BDD/ATDD</strong></td>
-<td>Write high-level tests first (e.g. Gherkin), then implement with TDD under the hood ([blog.cleancoder.com][1], [cleancoders.com][2], [arxiv.org][3]).</td>
+<td>🧠 <strong>Pure Functions</strong></td>
+<td>Logic, formatting, validation</td>
+<td><code>formatDate()</code>, <code>calculateTax()</code></td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h3 id="summary">Summary</h3>
+<h3 id="1-component-tests-most-common">🔍 1. Component Tests (Most Common)</h3>
+<p>You test <strong>what the user sees and can interact with</strong> — without mocking internals.</p>
+<div class="language-js highlight"><span class="filename">Example</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">test</span><span class="p">(</span><span class="s2">"shows error if email is invalid"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">LoginForm</span><span class="w"> </span><span class="o">/&gt;</span><span class="p">);</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nx">fireEvent</span><span class="p">.</span><span class="nx">change</span><span class="p">(</span><span class="nx">screen</span><span class="p">.</span><span class="nx">getByLabelText</span><span class="p">(</span><span class="sr">/email/i</span><span class="p">),</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nx">target</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">"invalid-email"</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="p">});</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nx">fireEvent</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="nx">screen</span><span class="p">.</span><span class="nx">getByText</span><span class="p">(</span><span class="sr">/submit/i</span><span class="p">));</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="nx">expect</span><span class="p">(</span><span class="nx">screen</span><span class="p">.</span><span class="nx">getByText</span><span class="p">(</span><span class="sr">/invalid email/i</span><span class="p">)).</span><span class="nx">toBeInTheDocument</span><span class="p">();</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">});</span>
+</span></code></pre></div>
+<ul>
+<li>No mocks</li>
+<li>Tests actual <strong>rendered output</strong></li>
+<li>Focus on <strong>visible behavior</strong>, not implementation</li>
+</ul>
+<hr>
+<h3 id="2-custom-hook-tests">🔁 2. Custom Hook Tests</h3>
+<p>Hooks return values or functions — great for direct logic testing (Chicago style).</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">renderHook</span><span class="p">,</span><span class="w"> </span><span class="nx">act</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@testing-library/react-hooks"</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">useCounter</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./useCounter"</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nx">test</span><span class="p">(</span><span class="s2">"increments counter"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">renderHook</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">useCounter</span><span class="p">());</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nx">act</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">result</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">increment</span><span class="p">());</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nx">expect</span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">count</span><span class="p">).</span><span class="nx">toBe</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">});</span>
+</span></code></pre></div>
+<ul>
+<li>Tests <strong>state transitions</strong></li>
+<li>No need to mock anything</li>
+<li>Treats the hook like a pure function</li>
+</ul>
+<hr>
+<h3 id="3-utility-logic-functions">📐 3. Utility / Logic Functions</h3>
+<p>Chicago-style is perfect for testing small helper logic:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">formatName</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./utils"</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">test</span><span class="p">(</span><span class="s2">"formats name correctly"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nx">expect</span><span class="p">(</span><span class="nx">formatName</span><span class="p">(</span><span class="s2">"john"</span><span class="p">,</span><span class="w"> </span><span class="s2">"doe"</span><span class="p">)).</span><span class="nx">toBe</span><span class="p">(</span><span class="s2">"John Doe"</span><span class="p">);</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">});</span>
+</span></code></pre></div>
+<hr>
+<h3 id="what-it-avoids">🧠 What It Avoids</h3>
+<ul>
+<li>❌ <strong>Mocking internal props/state</strong></li>
+<li>❌ <strong>Testing private methods or component internals</strong></li>
+<li>❌ <strong>Over-isolation of components</strong></li>
+</ul>
+<p>Instead, it encourages <mark>simple tests</mark> that reflect <mark>what the user would see or do</mark>.</p>
+<hr>
+<h3 id="when-it-mixes-with-other-styles">🔄 When It Mixes with Other Styles</h3>
 <table>
 <thead>
 <tr>
-<th>Approach</th>
-<th>Test-First TDD</th>
-<th>Test-Last</th>
+<th>Style</th>
+<th>When You Might Use It in React</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>When tests are written</strong></td>
-<td>Before implementation code</td>
-<td>After implementation code</td>
+<td><strong>London Style</strong></td>
+<td>Mocking APIs or services (e.g., <code>AuthService</code>)</td>
 </tr>
 <tr>
-<td><strong>Driving factor</strong></td>
-<td>Tests drive the design</td>
-<td>Code drives the tests</td>
+<td><strong>BDD/ATDD</strong></td>
+<td>Cypress or Playwright for user flows</td>
 </tr>
 <tr>
-<td><strong>Typical in TDD?</strong></td>
-<td>✅ Yes</td>
-<td>❌ No</td>
+<td><strong>Integration TDD</strong></td>
+<td>Testing multi-component flows</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h3 id="final-thoughts">✅ Final Thoughts</h3>
+<h3 id="summary_1">📌 Summary</h3>
+<p>In React, <mark>Chicago-style TDD</mark> is best used to test:</p>
 <ul>
-<li>
-<p><strong>Prefer Test-First/TDD</strong> for most development—especially if quality, refactoring, and long-term agility matter.</p>
-</li>
-<li>
-<p>If you <strong>must go Test-Last</strong>, ensure you maintain:</p>
-</li>
-<li>
-<p>Incremental cycles (small commits)</p>
-</li>
-<li>Timely testing right after feature implementation</li>
-<li>Commitment to test enforceability—no backlog of untested code.</li>
+<li>✅ Component rendering and behavior</li>
+<li>✅ Hook logic</li>
+<li>✅ State updates and transitions</li>
+<li>✅ Output based on input — not internal implementation</li>
 </ul>
-<p>Uncle Bob’s central message: <mark>tests aren’t just validation—they’re design tools</mark>. Use them early and often to shape better code.</p></div>
+<p>It keeps your tests <strong>focused, maintainable, and aligned with user expectations</strong>.</p></div>
 
 
 
@@ -1494,7 +1651,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../example/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Example">
+          <a href="../characterization-testing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Characterization Testing">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1504,27 +1661,11 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Example
+                Characterization Testing
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../test-last-approach/" class="md-footer__link md-footer__link--next" aria-label="Next: Test-Last Approach">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Test-Last Approach
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
