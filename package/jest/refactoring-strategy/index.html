@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://js-testing.github.io/lib/rtl/example/">
+        <link rel="canonical" href="https://js-testing.github.io/package/jest/refactoring-strategy/">
       
       
-        <link rel="prev" href="../setup/">
+        <link rel="prev" href="../overview/">
       
+      
+        <link rel="next" href="../../vitest/overview/">
       
       
       <link rel="icon" href="../../../assets/logo/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Example - JS Testing</title>
+        <title>Refactoring Strategy - JS Testing</title>
       
     
     
@@ -83,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#step-by-step-tdd-example" class="md-skip">
+        <a href="#refactoring-strategy" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Example
+              Refactoring Strategy
             
           </span>
         </div>
@@ -262,6 +264,26 @@
     
     
       <li class="md-tabs__item">
+        <a href="../../../tools/overview/" class="md-tabs__link">
+          
+  
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../../../testing/intro/" class="md-tabs__link">
           
   
@@ -298,11 +320,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../jest/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   
@@ -338,13 +362,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../overview/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../rtl/overview/" class="md-tabs__link">
           
   
   
@@ -688,7 +710,7 @@
   
   
   <span class="md-ellipsis">
-    Testing
+    Tools
     
   </span>
   
@@ -698,6 +720,146 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/bundlers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bundlers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/compilers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Compilers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tools/machine-code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Machine Code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Testing
           </label>
@@ -866,10 +1028,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -882,8 +1044,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             TDD
           </label>
@@ -1107,24 +1269,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -1137,8 +1304,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Jest
           </label>
@@ -1151,7 +1318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../jest/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -1171,10 +1338,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../jest/refactoring-strategy/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Refactoring Strategy
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1185,6 +1374,77 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overall-strategy-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧭 Overall Strategy Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧭 Overall Strategy Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-foundation-set-up-small-wins" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧱 Phase 1: Foundation – Set Up &amp; Small Wins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-isolate-logic-from-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Phase 2: Isolate Logic from UI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-create-targeted-test-suites" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 Phase 3: Create Targeted Test Suites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-replace-axios-where-possible-with-rtk-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Phase 4: Replace axios Where Possible with RTK Query
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1215,10 +1475,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -1231,8 +1491,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Vitest
           </label>
@@ -1272,29 +1532,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -1307,8 +1562,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             RTL
           </label>
@@ -1321,7 +1576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../rtl/overview/" class="md-nav__link">
         
   
   
@@ -1344,7 +1599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/" class="md-nav__link">
+      <a href="../../rtl/setup/" class="md-nav__link">
         
   
   
@@ -1364,32 +1619,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Example
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../rtl/example/" class="md-nav__link">
         
   
   
@@ -1400,86 +1633,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#feature-to-build" class="md-nav__link">
-    <span class="md-ellipsis">
-      💡 Feature to build:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="💡 Feature to build:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-write-the-test-first-red-phase-it-should-fail" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ 1. Write the test first (Red phase – it should fail)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-write-the-minimal-code-to-make-the-test-pass-green-phase" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ 2. Write the minimal code to make the test pass (Green phase)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-run-your-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ 3. Run your tests
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-refactor-optional" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔁 4. Refactor (Optional)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-you-used" class="md-nav__link">
-    <span class="md-ellipsis">
-      📦 What You Used
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1519,46 +1672,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#feature-to-build" class="md-nav__link">
+  <a href="#overall-strategy-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      💡 Feature to build:
+      🧭 Overall Strategy Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="💡 Feature to build:">
+    <nav class="md-nav" aria-label="🧭 Overall Strategy Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-write-the-test-first-red-phase-it-should-fail" class="md-nav__link">
+  <a href="#phase-1-foundation-set-up-small-wins" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 1. Write the test first (Red phase – it should fail)
+      🧱 Phase 1: Foundation – Set Up &amp; Small Wins
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-write-the-minimal-code-to-make-the-test-pass-green-phase" class="md-nav__link">
+  <a href="#phase-2-isolate-logic-from-ui" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 2. Write the minimal code to make the test pass (Green phase)
+      🧩 Phase 2: Isolate Logic from UI
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-run-your-tests" class="md-nav__link">
+  <a href="#phase-3-create-targeted-test-suites" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 3. Run your tests
+      🔁 Phase 3: Create Targeted Test Suites
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-refactor-optional" class="md-nav__link">
+  <a href="#phase-4-replace-axios-where-possible-with-rtk-query" class="md-nav__link">
     <span class="md-ellipsis">
-      🔁 4. Refactor (Optional)
+      🧪 Phase 4: Replace axios Where Possible with RTK Query
     </span>
   </a>
   
@@ -1566,15 +1719,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-you-used" class="md-nav__link">
-    <span class="md-ellipsis">
-      📦 What You Used
-    </span>
-  </a>
   
 </li>
       
@@ -1594,76 +1738,149 @@
 
 
 
-<div><h1 id="step-by-step-tdd-example">🔧 Step-by-Step TDD Example</h1>
-<h2 id="feature-to-build">💡 Feature to build:</h2>
-<blockquote>
-<p>A button that says “Click Me”, and when clicked, shows the message “Hello, World!”</p>
-</blockquote>
-<hr>
-<h3 id="1-write-the-test-first-red-phase-it-should-fail">✅ 1. Write the test first (Red phase – it should fail)</h3>
-<div class="language-js highlight"><span class="filename">📁 App.test.tsx</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">render</span><span class="p">,</span><span class="w"> </span><span class="nx">screen</span><span class="p">,</span><span class="w"> </span><span class="nx">fireEvent</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@testing-library/react"</span><span class="p">;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">App</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"./App"</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nx">test</span><span class="p">(</span><span class="s1">'shows "Hello, World!" when button is clicked'</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">App</span><span class="w"> </span><span class="o">/&gt;</span><span class="p">);</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="c1">// Button should exist</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">screen</span><span class="p">.</span><span class="nx">getByText</span><span class="p">(</span><span class="s2">"Click Me"</span><span class="p">);</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nx">expect</span><span class="p">(</span><span class="nx">button</span><span class="p">).</span><span class="nx">toBeInTheDocument</span><span class="p">();</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="c1">// Message should not be visible yet</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="nx">expect</span><span class="p">(</span><span class="nx">screen</span><span class="p">.</span><span class="nx">queryByText</span><span class="p">(</span><span class="s2">"Hello, World!"</span><span class="p">)).</span><span class="nx">not</span><span class="p">.</span><span class="nx">toBeInTheDocument</span><span class="p">();</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="c1">// Click the button</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="nx">fireEvent</span><span class="p">.</span><span class="nx">click</span><span class="p">(</span><span class="nx">button</span><span class="p">);</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">  </span><span class="c1">// Now the message should appear</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">  </span><span class="nx">expect</span><span class="p">(</span><span class="nx">screen</span><span class="p">.</span><span class="nx">getByText</span><span class="p">(</span><span class="s2">"Hello, World!"</span><span class="p">)).</span><span class="nx">toBeInTheDocument</span><span class="p">();</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="p">});</span>
-</span></code></pre></div>
-<hr>
-<h3 id="2-write-the-minimal-code-to-make-the-test-pass-green-phase">✅ 2. Write the minimal code to make the test pass (Green phase)</h3>
-<div class="language-js highlight"><span class="filename">📁 App.tsx</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"react"</span><span class="p">;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">showMessage</span><span class="p">,</span><span class="w"> </span><span class="nx">setShowMessage</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">button</span><span class="w"> </span><span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setShowMessage</span><span class="p">(</span><span class="kc">true</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Click</span><span class="w"> </span><span class="nx">Me</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">      </span><span class="p">{</span><span class="nx">showMessage</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">Hello</span><span class="p">,</span><span class="w"> </span><span class="nx">World</span><span class="o">!&lt;</span><span class="err">/p&gt;}</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span><span class="p">);</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="p">}</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">App</span><span class="p">;</span>
-</span></code></pre></div>
-<hr>
-<h3 id="3-run-your-tests">✅ 3. Run your tests</h3>
-<p>If you're using <strong>Vitest</strong>, run:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npx<span class="w"> </span>vitest
-</span></code></pre></div>
-<p>Or in watch mode:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npx<span class="w"> </span>vitest<span class="w"> </span>--watch
-</span></code></pre></div>
-<p>With Jest:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npx<span class="w"> </span>jest
-</span></code></pre></div>
-<p>You should now see the test pass! ✅</p>
-<hr>
-<h3 id="4-refactor-optional">🔁 4. Refactor (Optional)</h3>
-<p>Clean up any messy code now that the logic works. For example, extract logic into separate components if needed, or improve accessibility.</p>
-<h2 id="what-you-used">📦 What You Used</h2>
+<div><h1 id="refactoring-strategy">Refactoring strategy</h1>
+<p>Here's a practical and realistic testing + refactoring strategy tailored for your React 18 + Ant Design + RTK Query + Axios app. The goal is to:</p>
 <ul>
-<li><strong>React Testing Library</strong>: To render components and interact with them like a user.</li>
-<li><strong>Vitest</strong> (or Jest): To run the tests and assert expectations.</li>
-<li>
-<p><strong>TDD cycle</strong>:</p>
-<ul>
-<li><mark>Write test → Fail → Write code → Pass → Refactor</mark></li>
+<li>Test existing code (test-last) ✅</li>
+<li>Refactor safely 🛠</li>
+<li>Gradually improve maintainability 🔁</li>
 </ul>
-</li>
-</ul></div>
+<h2 id="overall-strategy-overview">🧭 Overall Strategy Overview</h2>
+<hr>
+<h3 id="phase-1-foundation-set-up-small-wins">🧱 Phase 1: Foundation – Set Up &amp; Small Wins</h3>
+<blockquote>
+<p>Goal: Get testing infrastructure and habits in place.</p>
+</blockquote>
+<p>✅ Step 1: Install and Configure Testing Tools</p>
+<ul>
+<li><code>@testing-library/react</code></li>
+<li><code>jest</code> (or vitest if using Vite)</li>
+<li><code>@testing-library/jest-dom</code></li>
+<li>[Optional] <code>msw</code> (Mock Service Worker) for mocking API responses</li>
+</ul>
+<p>✅ Step 2: Smoke Test Existing Components</p>
+<p>Pick <strong>2–3 components</strong> to start with. Add minimal tests:</p>
+<ul>
+<li>Does the component render?</li>
+<li>Does it show loading/error states?</li>
+<li>Can it display mock data?</li>
+</ul>
+<p>Keep it <strong>low-effort</strong> to get coverage started.</p>
+<hr>
+<h3 id="phase-2-isolate-logic-from-ui">🧩 Phase 2: Isolate Logic from UI</h3>
+<blockquote>
+<p>Goal: Refactor code to make it easier to test.</p>
+</blockquote>
+<p>🧪 Strategy A: Separate Business Logic from Presentation</p>
+<p><strong>Example:</strong></p>
+<p>Extract RTK Query logic into a custom hook.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// hooks/useUsers.js</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useGetUsersQuery</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"../store/api"</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">useUsers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">useGetUsersQuery</span><span class="p">();</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">};</span>
+</span></code></pre></div>
+<p>Now test the hook separately if needed using <code>@testing-library/react-hooks</code>.</p>
+<p>🧪 Strategy B: Extract Complex UI into Reusable Components</p>
+<p>If a component is doing too much:</p>
+<ul>
+<li>Fetching data</li>
+<li>Showing table</li>
+<li>Handling pagination or modals</li>
+</ul>
+<p>Split it into:</p>
+<ul>
+<li><code>UsersTable</code> (UI only)</li>
+<li><code>UsersContainer</code> (data fetching)</li>
+</ul>
+<hr>
+<h3 id="phase-3-create-targeted-test-suites">🔁 Phase 3: Create Targeted Test Suites</h3>
+<blockquote>
+<p>Goal: Increase test confidence in key areas.</p>
+</blockquote>
+<p>🔍 Prioritize These:</p>
+<ul>
+<li>Components with <strong>critical workflows</strong> (e.g., login, checkout, user update)</li>
+<li>Anything connected to <strong>state management</strong> or <strong>API</strong></li>
+<li>Components using A<strong>ntD modals, forms, or tables</strong>, since those are easy to break with refactors</li>
+</ul>
+<p>🎯 Test Types to Include:</p>
+<ul>
+<li><strong>Behavioral tests</strong> (user interaction + what user sees)</li>
+<li><strong>Error states</strong> (API failures)</li>
+<li><strong>Conditional rendering</strong> (modals, loading, permissions)</li>
+</ul>
+<hr>
+<h3 id="phase-4-replace-axios-where-possible-with-rtk-query">🧪 Phase 4: Replace <code>axios</code> Where Possible with RTK Query</h3>
+<p>If you're still using <code>axios</code> in parts:</p>
+<ul>
+<li>Migrate API logic to RTK Query</li>
+<li>This improves <strong>standardization</strong>, <strong>caching</strong>, and <strong>testability</strong></li>
+</ul>
+<p>You can test RTK Query logic using <strong>MSW</strong> to mock endpoints.</p>
+<hr>
+<p>🔨 Example Refactoring + Testing Use Case</p>
+<p><strong>🔁 Original:</strong></p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nx">axios</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">"/api/users"</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">setUsers</span><span class="p">);</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+</span></code></pre></div>
+<p>✅ Refactored with RTK:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// store/api.js</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">usersApi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createApi</span><span class="p">({</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">useGetUsersQuery</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usersApi</span><span class="p">.</span><span class="nx">endpoints</span><span class="p">.</span><span class="nx">getUsers</span><span class="p">.</span><span class="nx">useQuery</span><span class="p">;</span>
+</span></code></pre></div>
+<p>🧪 Test With Mock:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">test</span><span class="p">(</span><span class="s2">"shows users after loading"</span><span class="p">,</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nx">server</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nx">rest</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">"/api/users"</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">,</span><span class="w"> </span><span class="nx">ctx</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="nx">res</span><span class="p">(</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">json</span><span class="p">([{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">"Alice"</span><span class="w"> </span><span class="p">}]))</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="p">)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="p">);</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="nx">render</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">UserList</span><span class="w"> </span><span class="o">/&gt;</span><span class="p">);</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="nx">expect</span><span class="p">(</span><span class="k">await</span><span class="w"> </span><span class="nx">screen</span><span class="p">.</span><span class="nx">findByText</span><span class="p">(</span><span class="s2">"Alice"</span><span class="p">)).</span><span class="nx">toBeInTheDocument</span><span class="p">();</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">});</span>
+</span></code></pre></div>
+<hr>
+<p>✅ Summary: Your React Refactor/Test Strategy</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Goal</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Foundation</td>
+<td>Enable testing, write minimal tests</td>
+<td>Set up Jest + RTL, smoke tests</td>
+</tr>
+<tr>
+<td>2. Isolate Logic</td>
+<td>Make code testable</td>
+<td>Extract hooks, split smart/dumb components</td>
+</tr>
+<tr>
+<td>3. Prioritize</td>
+<td>Focus on critical areas</td>
+<td>Target RTK Query, forms, modals, key workflows</td>
+</tr>
+<tr>
+<td>4. Migrate</td>
+<td>Remove legacy patterns</td>
+<td>Replace axios with RTK Query where possible</td>
+</tr>
+<tr>
+<td>5. Harden</td>
+<td>Add interaction + edge tests</td>
+<td>Use MSW, test loading/error/success paths</td>
+</tr>
+</tbody>
+</table></div>
 
 
 
@@ -1699,7 +1916,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup">
+          <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1709,11 +1926,27 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Setup
+                Overview
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../../vitest/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     

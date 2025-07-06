@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://js-testing.github.io/tdd/overview/">
+        <link rel="canonical" href="https://js-testing.github.io/tools/compilers/">
       
       
-        <link rel="prev" href="../../testing/relay/">
+        <link rel="prev" href="../bundlers/">
       
       
-        <link rel="next" href="../types/">
+        <link rel="next" href="../machine-code/">
       
       
       <link rel="icon" href="../../assets/logo/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Overview - JS Testing</title>
+        <title>Compilers - JS Testing</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#compilers-transpilers" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Compilers
             
           </span>
         </div>
@@ -260,11 +260,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../tools/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   
@@ -300,13 +302,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../tdd/overview/" class="md-tabs__link">
           
   
   
@@ -688,24 +688,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -718,7 +723,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -732,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -755,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/bundlers/" class="md-nav__link">
+      <a href="../bundlers/" class="md-nav__link">
         
   
   
@@ -775,10 +780,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../tools/compilers/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Compilers
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -789,6 +816,125 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#compiler-vs-transpiler" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Compiler vs Transpiler
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Compiler vs Transpiler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-transpilerscompilers-used-in-js-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Common Transpilers/Compilers Used in JS Projects:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-are-compilers-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 When Are Compilers Used?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Example:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transpile-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transpile mean
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transpile mean">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-converts-javascript-to-machine-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 What Converts JavaScript to Machine Code?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visual Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-is-this-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why is this important?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -801,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/machine-code/" class="md-nav__link">
+      <a href="../machine-code/" class="md-nav__link">
         
   
   
@@ -1014,29 +1160,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1049,7 +1190,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             TDD
@@ -1060,32 +1201,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../tdd/overview/" class="md-nav__link">
         
   
   
@@ -1096,44 +1215,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-red-green-refactor-cycle" class="md-nav__link">
-    <span class="md-ellipsis">
-      The Red-Green-Refactor Cycle
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1146,7 +1227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../types/" class="md-nav__link">
+      <a href="../../tdd/types/" class="md-nav__link">
         
   
   
@@ -1169,7 +1250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tdd-styles/" class="md-nav__link">
+      <a href="../../tdd/tdd-styles/" class="md-nav__link">
         
   
   
@@ -1192,7 +1273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../folder-structure/" class="md-nav__link">
+      <a href="../../tdd/folder-structure/" class="md-nav__link">
         
   
   
@@ -1215,7 +1296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../example/" class="md-nav__link">
+      <a href="../../tdd/example/" class="md-nav__link">
         
   
   
@@ -1238,7 +1319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../approach/" class="md-nav__link">
+      <a href="../../tdd/approach/" class="md-nav__link">
         
   
   
@@ -1261,7 +1342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../test-last-approach/" class="md-nav__link">
+      <a href="../../tdd/test-last-approach/" class="md-nav__link">
         
   
   
@@ -1284,7 +1365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../characterization-testing/" class="md-nav__link">
+      <a href="../../tdd/characterization-testing/" class="md-nav__link">
         
   
   
@@ -1307,7 +1388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react-tdd-style/" class="md-nav__link">
+      <a href="../../tdd/react-tdd-style/" class="md-nav__link">
         
   
   
@@ -1639,20 +1720,101 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-red-green-refactor-cycle" class="md-nav__link">
+  <a href="#compiler-vs-transpiler" class="md-nav__link">
     <span class="md-ellipsis">
-      The Red-Green-Refactor Cycle
+      🔧 Compiler vs Transpiler
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Compiler vs Transpiler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-transpilerscompilers-used-in-js-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Common Transpilers/Compilers Used in JS Projects:
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#when-are-compilers-used" class="md-nav__link">
     <span class="md-ellipsis">
-      Reference
+      🚀 When Are Compilers Used?
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Example:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transpile-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transpile mean
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transpile mean">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-converts-javascript-to-machine-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 What Converts JavaScript to Machine Code?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visual Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-is-this-important" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why is this important?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1672,57 +1834,258 @@
 
 
 
-<div><h1 id="overview">Overview</h1>
-<p class="annotate">TDD is a <strong><em>software development methodology</em></strong> in which tests are written to drive the development of an application. It was developed/rediscovered by <mark>Kent Beck</mark> in the late 1990s as part of Extreme Programming1 and was well discussed in his famous book Test-Driven Development. (1)</p>
-<ol>
-<li>
-<p>Test-Driven Development With React and Typescript</p>
-</li>
-<li>
-<p><a href="https://martinfowler.com/bliki/ExtremeProgramming.html">Extreme Programming, Martin fowler</a></p>
-</li>
-</ol>
-<p>In his book, Kent Beck describes two essential rules:</p>
-<ul>
-<li>Write new code only if you first have a failing automated test</li>
-<li>Eliminate duplication</li>
-</ul>
-<p>which leads to the steps of <mark>Red-Green-Refactor</mark>, which we will discuss soon. The ultimate goal for these two rules is to write (as Ron Jeffries describes) clean code that works.</p>
+<div><h1 id="compilers-transpilers">🧪 Compilers / Transpilers</h1>
+<p>These tools <mark>transform code</mark> from one version or language to another — e.g., from TypeScript to JavaScript, or ES2023 to ES5.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Language Support</th>
+<th>What It Does</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Babel</strong></td>
+<td>JavaScript, JSX</td>
+<td>Transpiles modern JS/JSX to older JS (e.g., ES5)</td>
+<td>Rich plugin ecosystem, highly customizable</td>
+</tr>
+<tr>
+<td><strong>TypeScript (tsc)</strong></td>
+<td>TypeScript</td>
+<td>Compiles TypeScript to JavaScript</td>
+<td>Also performs type checking (Babel doesn’t)</td>
+</tr>
+<tr>
+<td><strong>SWC</strong></td>
+<td>JavaScript, TypeScript, JSX</td>
+<td>Rust-based alternative to Babel; very fast</td>
+<td>Drop-in replacement for Babel in many tools</td>
+</tr>
+<tr>
+<td><strong>esbuild</strong></td>
+<td>JavaScript, TypeScript, JSX</td>
+<td>Also a compiler — transpiles while bundling</td>
+<td>Less configurable than Babel or SWC</td>
+</tr>
+<tr>
+<td><strong>sucrase</strong></td>
+<td>TypeScript, JSX</td>
+<td>Very fast transpiler for dev-only use cases</td>
+<td>Doesn’t support full TS type checking</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<h2 id="the-red-green-refactor-cycle">The Red-Green-Refactor Cycle</h2>
-<p>Red-Green-Refactor is the <mark>core cycle of</mark> Test-Driven Development (TDD) methodology. The cycle involves the following steps:</p>
-<ol>
-<li>
-<p><strong><em>Red</em></strong>: Write a failing test that describes the desired behavior of a specific feature or functionality. The test should not pass yet as the functionality has not yet been implemented.</p>
-</li>
-<li>
-<p><strong><em>Green</em></strong>: Write the minimum amount of production code necessary to make the failing test pass. The focus should be solely on passing the test, without worrying about code quality or design.</p>
-</li>
-<li>
-<p><strong><em>Refactor</em></strong>: Improve the design of the production code without changing its behavior, ensuring that all tests continue to pass. This step includes optimizing the code, removing duplication, and enhancing its overall quality.</p>
-</li>
-</ol>
-<p>The cycle repeats with each new feature or functionality, with the goal of producing high-quality code that meets the specified requirements and is maintainable over time. The Red-Green-Refactor cycle (Figure 1-1) emphasizes writing automated tests before writing any production code, ensuring that the code is continually tested and improved as it evolves.</p>
-<p><a class="glightbox" href="../../assets/tdd/tdd-fig-1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="TDD" src="../../assets/tdd/tdd-fig-1.png"></a></p>
-<p><em>Traditionally</em>, TDD contains <mark>two major parts</mark>:</p>
-<ol>
-<li>quick implementation &amp;</li>
-<li>refactoring.</li>
-</ol>
-<p>In practice, the tests for quick implementation are not limited to the unit tests. They can be the acceptance tests as well – these are higher-level tests that focus more on business value and the end-user journey, without worrying too much about the technical details. Implementing the acceptance tests first could be an even better idea.</p>
+<h2 id="compiler-vs-transpiler">🔧 Compiler vs Transpiler</h2>
+<p>They’re often used interchangeably, but technically:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>What It Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Compiler</strong></td>
+<td>Transforms source code to a different form (could be lower-level, e.g., TS → JS, or even C → machine code)</td>
+</tr>
+<tr>
+<td><strong>Transpiler</strong></td>
+<td>“Source-to-source” compiler — transforms code from one language or version to another (e.g., ES6 → ES5)</td>
+</tr>
+</tbody>
+</table>
+<p>In JavaScript land, the difference is <strong>mostly semantic</strong>, so they’re usually grouped together.</p>
 <hr>
-<details class="tip" open="open">
-<summary>Best Practice for React/JS TDD</summary>
+<h3 id="common-transpilerscompilers-used-in-js-projects">🛠️ Common Transpilers/Compilers Used in JS Projects:</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Input Language</th>
+<th>Output</th>
+<th>Used in Production Builds?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Babel</strong></td>
+<td>ES6+/JSX</td>
+<td>ES5 JavaScript</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>SWC</strong></td>
+<td>TypeScript/JSX/ES6+</td>
+<td>JavaScript</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>TypeScript (<code>tsc</code>)</strong></td>
+<td>TypeScript</td>
+<td>JavaScript</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>esbuild</strong></td>
+<td>TypeScript/JSX/ESNext</td>
+<td>JavaScript</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>Sucrase</strong></td>
+<td>JSX/TS (fast, dev only)</td>
+<td>JavaScript</td>
+<td>❌ (used mostly in dev)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="when-are-compilers-used">🚀 When Are Compilers Used?</h3>
+<p>???+ tip 🔁 During Development"</p>
+<div class="language-text highlight"><pre><span></span><code>-   JSX or TypeScript needs to be compiled on-the-fly (e.g., with Babel or esbuild).
+-   Tools like Vite and Webpack use fast compilers (e.g., esbuild or SWC) behind the scenes.
+</code></pre></div>
+<details class="success" open="open">
+<summary>🏁 During Production Build</summary>
 <ul>
-<li>Use <a href="#">Jest</a> + <a href="#">React Testing Library</a> or <a href="#">Vitest</a>.</li>
-<li>Focus on <strong>behavior</strong>, not implementation details.</li>
-<li>Stick to <strong>test-first</strong> when doing TDD.</li>
+<li>All code is compiled once into clean, optimized JavaScript.</li>
+<li>Output is stored in files (dist/ or build/) and served statically.</li>
 </ul>
 </details>
 <hr>
-<h2 id="reference">Reference</h2>
+<h3 id="example">🧠 Example:</h3>
+<p>You write this React+TypeScript code:</p>
+<div class="language-ts highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">App</span><span class="o">:</span><span class="w"> </span><span class="kt">React.FC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="nx">Hello</span><span class="w"> </span><span class="nx">World</span><span class="o">&lt;</span><span class="err">/div&gt;;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">};</span>
+</span></code></pre></div>
+<p><strong>👇 Production build steps:</strong></p>
+<ol>
+<li>Compiler (e.g. <code>tsc</code>, <code>babel</code>, or <code>esbuild</code>) turns TS/JSX → plain JS.</li>
+<li>Builder (e.g. Vite, Webpack) bundles everything into a few minified files.</li>
+<li>✅ You deploy only the output — no JSX or TS remains.</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>Yes — compilers/transpilers are crucial for both development and production.</strong></p>
+<p>They ensure your modern JavaScript or JSX/TypeScript code is transformed into browser-compatible JavaScript.</p>
+</blockquote>
+<hr>
+<h2 id="transpile-mean">Transpile mean</h2>
+<p>🧪 What does "transpile" mean here?</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Input (TypeScript + JSX)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">App</span><span class="o">:</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">FC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">Hello</span><span class="w"> </span><span class="nx">World</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;;</span>
+</span></code></pre></div>
+<p>After esbuild transpiles it:</p>
+<div class="language-jsx highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Output (JavaScript)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">App</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">"h1"</span><span class="p">,</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="s2">"Hello World"</span><span class="p">);</span>
+</span></code></pre></div>
+<p>This output is still <em>JavaScript</em>, not machine code. The browser <strong>interprets</strong> or <strong>JIT-compiles</strong> this code into machine code at runtime.</p>
+<hr>
+<h3 id="what-converts-javascript-to-machine-code">🧠 What Converts JavaScript to Machine Code?</h3>
+<p>That’s handled by:</p>
 <ul>
-<li><a href="https://www.amazon.com/Test-Driven-Development-React-TypeScript-Maintainable/dp/1484296478">Test-Driven Development with React and TypeScript, Second Edition by Juntao Qiu</a></li>
+<li>
+<p>The browser’s JavaScript engine:</p>
+</li>
+<li>
+<p><strong>Chrome</strong> → V8</p>
+</li>
+<li><strong>Firefox</strong> → SpiderMonkey</li>
+<li><strong>Safari</strong> → JavaScriptCore</li>
+</ul>
+<p>These engines:</p>
+<ul>
+<li>Parse the JavaScript</li>
+<li>Optimize it</li>
+<li>JIT (Just-In-Time) compile it into <mark>machine code</mark> as the page runs</li>
+</ul>
+<p>So you never need to compile JavaScript to machine code manually.</p>
+<hr>
+<h3 id="summary">Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Converts to Machine Code?</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vite</strong></td>
+<td>❌ No</td>
+<td>Dev server + uses esbuild to transpile TS/JSX</td>
+</tr>
+<tr>
+<td><strong>esbuild</strong></td>
+<td>❌ No</td>
+<td>Transpiles code to JavaScript</td>
+</tr>
+<tr>
+<td><strong>Browser JS Engine</strong></td>
+<td>✅ Yes (at runtime)</td>
+<td>Interprets and compiles JS into machine code</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="visual-flow">Visual Flow</h2>
+<div class="language-text highlight"><span class="filename">Visual Flow: From Your Code to Machine Code in the Browser</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Your Source Code (React/TypeScript/ES6+)
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>            │
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>            │  (1) Transpile by Vite/esbuild
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>            ▼
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Transpiled JavaScript (plain JS, browser-compatible)
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>            │
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>            │  (2) Sent to Browser &amp; Parsed by JS Engine
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>            ▼
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    Browser JS Engine (e.g. V8 in Chrome)
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>            │
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>            │  (3) Interprets JS &amp; Optimizes
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>            │
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>            │  (4) Just-In-Time (JIT) Compiles JS into Machine Code
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>            ▼
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>       Machine Code (CPU instructions executed by your device)
+</span></code></pre></div>
+<details class="note" open="open">
+<summary>Step-by-step explanation</summary>
+<ol>
+<li>
+<p><strong>Transpilation</strong>:</p>
+<p>Tools like esbuild or Babel convert your JSX, TypeScript, or modern JS into plain old JavaScript that browsers understand.</p>
+</li>
+<li>
+<p><strong>Parsing</strong>:</p>
+<p>The browser’s JavaScript engine (like Chrome’s V8) reads and parses the JS code into an internal format.</p>
+</li>
+<li>
+<p><strong>Optimization</strong>:</p>
+<p>The engine runs optimizations, identifying hot code paths and improving performance.</p>
+</li>
+<li>
+<p><strong>JIT Compilation</strong>:</p>
+<p>The JS engine compiles the JavaScript at runtime into machine code (binary instructions) that the CPU can execute directly.</p>
+</li>
+</ol>
+</details>
+<hr>
+<h3 id="why-is-this-important">Why is this important?</h3>
+<ul>
+<li>You <mark>never ship machine code</mark> directly in web apps — you ship JavaScript.</li>
+<li>Browsers handle <mark>machine code generation</mark> dynamically for you, balancing speed and memory.</li>
+<li>This allows web apps to run anywhere with a modern browser without needing platform-specific binaries.</li>
+</ul>
+<hr>
+<p>If you want, I can also explain:</p>
+<ul>
+<li>How the <strong>V8 engine’s JIT compiler</strong> works in more detail</li>
+<li>How transpilers differ from minifiers and bundlers</li>
+<li>Or even show you a tiny demo of transpiled vs original code</li>
 </ul></div>
 
 
@@ -1759,7 +2122,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../testing/relay/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Relay">
+          <a href="../bundlers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bundlers">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1769,20 +2132,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Relay
+                Bundlers
               </div>
             </div>
           </a>
         
         
           
-          <a href="../types/" class="md-footer__link md-footer__link--next" aria-label="Next: Types">
+          <a href="../machine-code/" class="md-footer__link md-footer__link--next" aria-label="Next: Machine Code">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Types
+                Machine Code
               </div>
             </div>
             <div class="md-footer__button md-icon">

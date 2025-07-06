@@ -8,16 +8,16 @@
       
       
       
-        <link rel="canonical" href="https://js-testing.github.io/tdd/overview/">
+        <link rel="canonical" href="https://js-testing.github.io/package/jest/overview/">
       
       
-        <link rel="prev" href="../../testing/relay/">
+        <link rel="prev" href="../../../tdd/react-tdd-style/">
       
       
-        <link rel="next" href="../types/">
+        <link rel="next" href="../refactoring-strategy/">
       
       
-      <link rel="icon" href="../../assets/logo/favicon.png">
+      <link rel="icon" href="../../../assets/logo/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
@@ -26,10 +26,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,14 +48,14 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -66,7 +66,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -101,9 +101,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="JS Testing" class="md-header__button md-logo" aria-label="JS Testing" data-md-component="logo">
+    <a href="../../.." title="JS Testing" class="md-header__button md-logo" aria-label="JS Testing" data-md-component="logo">
       
-  <img src="../../assets/logo/testing.png" alt="logo">
+  <img src="../../../assets/logo/testing.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -223,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -244,7 +244,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../blog/" class="md-tabs__link">
+        <a href="../../../blog/" class="md-tabs__link">
           
   
   
@@ -264,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tools/overview/" class="md-tabs__link">
+        <a href="../../../tools/overview/" class="md-tabs__link">
           
   
   
@@ -284,11 +284,31 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../testing/intro/" class="md-tabs__link">
+        <a href="../../../testing/intro/" class="md-tabs__link">
           
   
   
   Testing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../tdd/overview/" class="md-tabs__link">
+          
+  
+  
+  TDD
 
         </a>
       </li>
@@ -310,26 +330,6 @@
           
   
   
-  TDD
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../package/jest/overview/" class="md-tabs__link">
-          
-  
-  
   Jest
 
         </a>
@@ -346,7 +346,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../package/vitest/overview/" class="md-tabs__link">
+        <a href="../../vitest/overview/" class="md-tabs__link">
           
   
   
@@ -366,7 +366,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../package/rtl/overview/" class="md-tabs__link">
+        <a href="../../rtl/overview/" class="md-tabs__link">
           
   
   
@@ -406,9 +406,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="JS Testing" class="md-nav__button md-logo" aria-label="JS Testing" data-md-component="logo">
+    <a href="../../.." title="JS Testing" class="md-nav__button md-logo" aria-label="JS Testing" data-md-component="logo">
       
-  <img src="../../assets/logo/testing.png" alt="logo">
+  <img src="../../../assets/logo/testing.png" alt="logo">
 
     </a>
     JS Testing
@@ -423,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -488,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/" class="md-nav__link">
+      <a href="../../../blog/" class="md-nav__link">
         
   
   
@@ -554,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/archive/2025/" class="md-nav__link">
+      <a href="../../../blog/archive/2025/" class="md-nav__link">
         
   
   
@@ -628,7 +628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/frontend/" class="md-nav__link">
+      <a href="../../../blog/category/frontend/" class="md-nav__link">
         
   
   
@@ -653,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/category/testing/" class="md-nav__link">
+      <a href="../../../blog/category/testing/" class="md-nav__link">
         
   
   
@@ -732,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/overview/" class="md-nav__link">
+      <a href="../../../tools/overview/" class="md-nav__link">
         
   
   
@@ -755,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/bundlers/" class="md-nav__link">
+      <a href="../../../tools/bundlers/" class="md-nav__link">
         
   
   
@@ -778,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/compilers/" class="md-nav__link">
+      <a href="../../../tools/compilers/" class="md-nav__link">
         
   
   
@@ -801,7 +801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/machine-code/" class="md-nav__link">
+      <a href="../../../tools/machine-code/" class="md-nav__link">
         
   
   
@@ -872,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/intro/" class="md-nav__link">
+      <a href="../../../testing/intro/" class="md-nav__link">
         
   
   
@@ -895,7 +895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/types/" class="md-nav__link">
+      <a href="../../../testing/types/" class="md-nav__link">
         
   
   
@@ -918,7 +918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/developer-vs-qa/" class="md-nav__link">
+      <a href="../../../testing/developer-vs-qa/" class="md-nav__link">
         
   
   
@@ -941,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/stubb/" class="md-nav__link">
+      <a href="../../../testing/stubb/" class="md-nav__link">
         
   
   
@@ -964,7 +964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/react/" class="md-nav__link">
+      <a href="../../../testing/react/" class="md-nav__link">
         
   
   
@@ -987,12 +987,267 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/relay/" class="md-nav__link">
+      <a href="../../../testing/relay/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Relay
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    TDD
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            TDD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tdd/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tdd/types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tdd/tdd-styles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TDD Styles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tdd/folder-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Folder Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tdd/example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tdd/approach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Approach
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tdd/test-last-approach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Test-Last Approach
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tdd/characterization-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Characterization Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tdd/react-tdd-style/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    React TDD Style
     
   </span>
   
@@ -1033,15 +1288,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    TDD
+    Jest
     
   </span>
   
@@ -1049,10 +1304,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            TDD
+            Jest
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1113,9 +1368,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-red-green-refactor-cycle" class="md-nav__link">
+  <a href="#babel" class="md-nav__link">
     <span class="md-ellipsis">
-      The Red-Green-Refactor Cycle
+      Babel
     </span>
   </a>
   
@@ -1146,262 +1401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../types/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Types
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tdd-styles/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    TDD Styles
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../folder-structure/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Folder Structure
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Example
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../approach/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Approach
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../test-last-approach/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Test-Last Approach
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../characterization-testing/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Characterization Testing
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../react-tdd-style/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    React TDD Style
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Jest
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            Jest
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../package/jest/overview/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../package/jest/refactoring-strategy/" class="md-nav__link">
+      <a href="../refactoring-strategy/" class="md-nav__link">
         
   
   
@@ -1472,7 +1472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/vitest/overview/" class="md-nav__link">
+      <a href="../../vitest/overview/" class="md-nav__link">
         
   
   
@@ -1543,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/rtl/overview/" class="md-nav__link">
+      <a href="../../rtl/overview/" class="md-nav__link">
         
   
   
@@ -1566,7 +1566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/rtl/setup/" class="md-nav__link">
+      <a href="../../rtl/setup/" class="md-nav__link">
         
   
   
@@ -1589,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../package/rtl/example/" class="md-nav__link">
+      <a href="../../rtl/example/" class="md-nav__link">
         
   
   
@@ -1639,9 +1639,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-red-green-refactor-cycle" class="md-nav__link">
+  <a href="#babel" class="md-nav__link">
     <span class="md-ellipsis">
-      The Red-Green-Refactor Cycle
+      Babel
     </span>
   </a>
   
@@ -1673,56 +1673,48 @@
 
 
 <div><h1 id="overview">Overview</h1>
-<p class="annotate">TDD is a <strong><em>software development methodology</em></strong> in which tests are written to drive the development of an application. It was developed/rediscovered by <mark>Kent Beck</mark> in the late 1990s as part of Extreme Programming1 and was well discussed in his famous book Test-Driven Development. (1)</p>
+<p>Jest is a testing framework from Facebook that allows developers to write reliable and fast-running tests in a more readable syntax. It can watch changes in test/source files and rerun the necessary tests automatically.</p>
+<p class="annotate">This allows you to get quick feedback, and that is a crucial factor in TDD. The speed of feedback can even determine whether TDD works for you or not. Simply put, the faster tests can run, the more efficient developers can be. (1)</p>
 <ol>
-<li>
-<p>Test-Driven Development With React and Typescript</p>
-</li>
-<li>
-<p><a href="https://martinfowler.com/bliki/ExtremeProgramming.html">Extreme Programming, Martin fowler</a></p>
-</li>
+<li>Test-Drivern Development with React and TypeScript</li>
 </ol>
-<p>In his book, Kent Beck describes two essential rules:</p>
-<ul>
-<li>Write new code only if you first have a failing automated test</li>
-<li>Eliminate duplication</li>
-</ul>
-<p>which leads to the steps of <mark>Red-Green-Refactor</mark>, which we will discuss soon. The ultimate goal for these two rules is to write (as Ron Jeffries describes) clean code that works.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>jest
+</span></code></pre></div>
+<p>Note that if you have installed jest globally (with <code>npm install jest -g</code>), you can use the following command to init the config directly:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>jest<span class="w"> </span>--init
+</span></code></pre></div>
+<p>Otherwise, you will have to use the local installation by npx, which looks for jest binary from <code>node_modules/.bin/</code> and invokes it:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npx<span class="w"> </span>jest<span class="w"> </span>--init
+</span></code></pre></div>
 <hr>
-<h2 id="the-red-green-refactor-cycle">The Red-Green-Refactor Cycle</h2>
-<p>Red-Green-Refactor is the <mark>core cycle of</mark> Test-Driven Development (TDD) methodology. The cycle involves the following steps:</p>
-<ol>
-<li>
-<p><strong><em>Red</em></strong>: Write a failing test that describes the desired behavior of a specific feature or functionality. The test should not pass yet as the functionality has not yet been implemented.</p>
-</li>
-<li>
-<p><strong><em>Green</em></strong>: Write the minimum amount of production code necessary to make the failing test pass. The focus should be solely on passing the test, without worrying about code quality or design.</p>
-</li>
-<li>
-<p><strong><em>Refactor</em></strong>: Improve the design of the production code without changing its behavior, ensuring that all tests continue to pass. This step includes optimizing the code, removing duplication, and enhancing its overall quality.</p>
-</li>
-</ol>
-<p>The cycle repeats with each new feature or functionality, with the goal of producing high-quality code that meets the specified requirements and is maintainable over time. The Red-Green-Refactor cycle (Figure 1-1) emphasizes writing automated tests before writing any production code, ensuring that the code is continually tested and improved as it evolves.</p>
-<p><a class="glightbox" href="../../assets/tdd/tdd-fig-1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="TDD" src="../../assets/tdd/tdd-fig-1.png"></a></p>
-<p><em>Traditionally</em>, TDD contains <mark>two major parts</mark>:</p>
-<ol>
-<li>quick implementation &amp;</li>
-<li>refactoring.</li>
-</ol>
-<p>In practice, the tests for quick implementation are not limited to the unit tests. They can be the acceptance tests as well – these are higher-level tests that focus more on business value and the end-user journey, without worrying too much about the technical details. Implementing the acceptance tests first could be an even better idea.</p>
-<hr>
-<details class="tip" open="open">
-<summary>Best Practice for React/JS TDD</summary>
-<ul>
-<li>Use <a href="#">Jest</a> + <a href="#">React Testing Library</a> or <a href="#">Vitest</a>.</li>
-<li>Focus on <strong>behavior</strong>, not implementation details.</li>
-<li>Stick to <strong>test-first</strong> when doing TDD.</li>
-</ul>
-</details>
+<h2 id="babel">Babel</h2>
+<p>To use TypeScript with jest-101, we need to first install and configure babel. If you’re not familiar with babel, don’t worry – we’ll cover it in the next chapter.</p>
+<p>In essence, babel is a tool that can translate TypeScript to JavaScript that can be understood by the JavaScript runtime (Node).</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>babel-jest<span class="w"> </span>@babel/core<span class="w"> </span>@babel/preset-env
+</span></code></pre></div>
+<p>And then create a <code>babel.config.js</code> file in the root of our project (the jest-101 folder), with the following content:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nx">presets</span><span class="o">:</span><span class="w"> </span><span class="p">[[</span><span class="s2">"@babel/preset-env"</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">targets</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">node</span><span class="o">:</span><span class="w"> </span><span class="s2">"current"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}]],</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">};</span>
+</span></code></pre></div>
+<p>Now let’s enable TypeScript for our source code:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>@babel/preset-typescript
+</span></code></pre></div>
+<p>And modify babel.config.js with the following content:</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nx">presets</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="p">[</span><span class="s2">"@babel/preset-env"</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">targets</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">node</span><span class="o">:</span><span class="w"> </span><span class="s2">"current"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}],</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="s2">"@babel/preset-typescript"</span><span class="p">,</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="p">],</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">};</span>
+</span></code></pre></div>
+<p>We’re all set now. It’s time to write our first Jest test.</p>
 <hr>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="https://www.amazon.com/Test-Driven-Development-React-TypeScript-Maintainable/dp/1484296478">Test-Driven Development with React and TypeScript, Second Edition by Juntao Qiu</a></li>
+<li><a href="https://www.linkedin.com/pulse/vitest-vs-jest-personal-take-testing-frameworks-bhuvan-chawla-uvjfc/">Linkedin: Vitest vs Jest: A Personal Take on Testing Frameworks</a></li>
+<li><a href="https://medium.com/@harish.bisht/vitest-unleashing-the-next-generation-of-testing-frameworks-7e6da7201759">Medium: Vitest: Unleashing the Next Generation of Testing Frameworks</a></li>
+<li><a href="https://lil-armstrong.medium.com/setup-vite2-with-vitest-jest-for-testing-in-react-app-1c8a1972446">Medium: Setup Vite2 with Vitest &amp; Jest for testing in react app</a></li>
 </ul></div>
 
 
@@ -1759,7 +1751,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../testing/relay/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Relay">
+          <a href="../../../tdd/react-tdd-style/" class="md-footer__link md-footer__link--prev" aria-label="Previous: React TDD Style">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1769,20 +1761,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Relay
+                React TDD Style
               </div>
             </div>
           </a>
         
         
           
-          <a href="../types/" class="md-footer__link md-footer__link--next" aria-label="Next: Types">
+          <a href="../refactoring-strategy/" class="md-footer__link md-footer__link--next" aria-label="Next: Refactoring Strategy">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Types
+                Refactoring Strategy
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1818,10 +1810,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>

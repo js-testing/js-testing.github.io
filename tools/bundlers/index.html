@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://js-testing.github.io/lib/jest/overview/">
+        <link rel="canonical" href="https://js-testing.github.io/tools/bundlers/">
       
       
-        <link rel="prev" href="../../../tdd/react-tdd-style/">
+        <link rel="prev" href="../overview/">
       
       
-        <link rel="next" href="../refactoring-strategy/">
+        <link rel="next" href="../compilers/">
       
       
-      <link rel="icon" href="../../../assets/logo/favicon.png">
+      <link rel="icon" href="../../assets/logo/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Overview - JS Testing</title>
+        <title>Bundlers - JS Testing</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,14 +48,14 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -66,7 +66,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#bundlers-build-tools" class="md-skip">
           Skip to content
         </a>
       
@@ -101,9 +101,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="JS Testing" class="md-header__button md-logo" aria-label="JS Testing" data-md-component="logo">
+    <a href="../.." title="JS Testing" class="md-header__button md-logo" aria-label="JS Testing" data-md-component="logo">
       
-  <img src="../../../assets/logo/testing.png" alt="logo">
+  <img src="../../assets/logo/testing.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Bundlers
             
           </span>
         </div>
@@ -223,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -244,7 +244,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../blog/" class="md-tabs__link">
+        <a href="../../blog/" class="md-tabs__link">
           
   
   
@@ -260,11 +260,33 @@
   
   
   
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  
+  Tools
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
   
     
     
       <li class="md-tabs__item">
-        <a href="../../../testing/intro/" class="md-tabs__link">
+        <a href="../../testing/intro/" class="md-tabs__link">
           
   
   
@@ -284,7 +306,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../tdd/overview/" class="md-tabs__link">
+        <a href="../../tdd/overview/" class="md-tabs__link">
           
   
   
@@ -300,13 +322,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../package/jest/overview/" class="md-tabs__link">
           
   
   
@@ -326,7 +346,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../vitest/overview/" class="md-tabs__link">
+        <a href="../../package/vitest/overview/" class="md-tabs__link">
           
   
   
@@ -346,7 +366,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../rtl/overview/" class="md-tabs__link">
+        <a href="../../package/rtl/overview/" class="md-tabs__link">
           
   
   
@@ -386,9 +406,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="JS Testing" class="md-nav__button md-logo" aria-label="JS Testing" data-md-component="logo">
+    <a href="../.." title="JS Testing" class="md-nav__button md-logo" aria-label="JS Testing" data-md-component="logo">
       
-  <img src="../../../assets/logo/testing.png" alt="logo">
+  <img src="../../assets/logo/testing.png" alt="logo">
 
     </a>
     JS Testing
@@ -403,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -468,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/" class="md-nav__link">
+      <a href="../../blog/" class="md-nav__link">
         
   
   
@@ -534,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/archive/2025/" class="md-nav__link">
+      <a href="../../blog/archive/2025/" class="md-nav__link">
         
   
   
@@ -608,7 +628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/category/frontend/" class="md-nav__link">
+      <a href="../../blog/category/frontend/" class="md-nav__link">
         
   
   
@@ -633,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../blog/category/testing/" class="md-nav__link">
+      <a href="../../blog/category/testing/" class="md-nav__link">
         
   
   
@@ -668,29 +688,34 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    Testing
+    Tools
     
   </span>
   
@@ -698,10 +723,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Testing
+            Tools
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -712,7 +737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/intro/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -732,15 +757,48 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../testing/types/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Types
+    Bundlers
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compilers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Compilers
     
   </span>
   
@@ -758,81 +816,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../testing/developer-vs-qa/" class="md-nav__link">
+      <a href="../machine-code/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Dev vs QA Role
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../testing/stubb/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Stub
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../testing/react/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    React
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../testing/relay/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Relay
+    Machine Code
     
   </span>
   
@@ -876,7 +865,7 @@
   
   
   <span class="md-ellipsis">
-    TDD
+    Testing
     
   </span>
   
@@ -887,7 +876,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            TDD
+            Testing
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -898,7 +887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tdd/overview/" class="md-nav__link">
+      <a href="../../testing/intro/" class="md-nav__link">
         
   
   
@@ -921,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tdd/types/" class="md-nav__link">
+      <a href="../../testing/types/" class="md-nav__link">
         
   
   
@@ -944,7 +933,193 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tdd/tdd-styles/" class="md-nav__link">
+      <a href="../../testing/developer-vs-qa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dev vs QA Role
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/stubb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    React
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/relay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Relay
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    TDD
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            TDD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdd/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdd/types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdd/tdd-styles/" class="md-nav__link">
         
   
   
@@ -967,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tdd/folder-structure/" class="md-nav__link">
+      <a href="../../tdd/folder-structure/" class="md-nav__link">
         
   
   
@@ -990,7 +1165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tdd/example/" class="md-nav__link">
+      <a href="../../tdd/example/" class="md-nav__link">
         
   
   
@@ -1013,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tdd/approach/" class="md-nav__link">
+      <a href="../../tdd/approach/" class="md-nav__link">
         
   
   
@@ -1036,7 +1211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tdd/test-last-approach/" class="md-nav__link">
+      <a href="../../tdd/test-last-approach/" class="md-nav__link">
         
   
   
@@ -1059,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tdd/characterization-testing/" class="md-nav__link">
+      <a href="../../tdd/characterization-testing/" class="md-nav__link">
         
   
   
@@ -1082,162 +1257,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../tdd/react-tdd-style/" class="md-nav__link">
+      <a href="../../tdd/react-tdd-style/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     React TDD Style
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Jest
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Jest
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../refactoring-strategy/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Refactoring Strategy
     
   </span>
   
@@ -1281,7 +1306,7 @@
   
   
   <span class="md-ellipsis">
-    Vitest
+    Jest
     
   </span>
   
@@ -1292,7 +1317,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Vitest
+            Jest
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1303,12 +1328,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../vitest/overview/" class="md-nav__link">
+      <a href="../../package/jest/overview/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/jest/refactoring-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Refactoring Strategy
     
   </span>
   
@@ -1352,7 +1400,7 @@
   
   
   <span class="md-ellipsis">
-    RTL
+    Vitest
     
   </span>
   
@@ -1362,6 +1410,77 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Vitest
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/vitest/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    RTL
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             RTL
           </label>
@@ -1374,7 +1493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../rtl/overview/" class="md-nav__link">
+      <a href="../../package/rtl/overview/" class="md-nav__link">
         
   
   
@@ -1397,7 +1516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../rtl/setup/" class="md-nav__link">
+      <a href="../../package/rtl/setup/" class="md-nav__link">
         
   
   
@@ -1420,7 +1539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../rtl/example/" class="md-nav__link">
+      <a href="../../package/rtl/example/" class="md-nav__link">
         
   
   
@@ -1463,23 +1582,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1494,15 +1596,62 @@
 
 
 
-<div><h1 id="overview">Overview</h1>
-<hr>
-<hr>
-<h2 id="reference">Reference</h2>
-<ul>
-<li><a href="https://www.linkedin.com/pulse/vitest-vs-jest-personal-take-testing-frameworks-bhuvan-chawla-uvjfc/">Linkedin: Vitest vs Jest: A Personal Take on Testing Frameworks</a></li>
-<li><a href="https://medium.com/@harish.bisht/vitest-unleashing-the-next-generation-of-testing-frameworks-7e6da7201759">Medium: Vitest: Unleashing the Next Generation of Testing Frameworks</a></li>
-<li><a href="https://lil-armstrong.medium.com/setup-vite2-with-vitest-jest-for-testing-in-react-app-1c8a1972446">Medium: Setup Vite2 with Vitest &amp; Jest for testing in react app</a></li>
-</ul></div>
+<div><h1 id="bundlers-build-tools">🔧 Bundlers / Build Tools</h1>
+<p>These tools <mark>bundle multiple modules</mark> (JavaScript, CSS, assets) into one or more output files and often include dev servers, hot reload, and minification features.</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Type</th>
+<th>What It Does</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Webpack</strong></td>
+<td>Bundler</td>
+<td>Bundles JS/CSS/assets into deployable files</td>
+<td>Highly customizable; widely used in enterprise apps</td>
+</tr>
+<tr>
+<td><strong>Rollup</strong></td>
+<td>Bundler</td>
+<td>Optimized bundling for libraries/modules</td>
+<td>Excellent tree-shaking and smaller output</td>
+</tr>
+<tr>
+<td><strong>Parcel</strong></td>
+<td>Bundler</td>
+<td>Zero-config bundler with sensible defaults</td>
+<td>Fast and beginner-friendly</td>
+</tr>
+<tr>
+<td><strong>Vite</strong></td>
+<td>Build Tool</td>
+<td>Dev server + bundler using esbuild (dev) &amp; Rollup (prod)</td>
+<td>Fast dev experience; great for modern frontend frameworks</td>
+</tr>
+<tr>
+<td><strong>Snowpack</strong> (deprecated)</td>
+<td>Build Tool</td>
+<td>Used ESM-based builds for modern browsers</td>
+<td>Replaced by Vite in many cases</td>
+</tr>
+<tr>
+<td><strong>esbuild</strong></td>
+<td>Bundler + Transpiler</td>
+<td>Very fast bundler with built-in transpilation</td>
+<td>Written in Go; limited plugin ecosystem</td>
+</tr>
+<tr>
+<td><strong>Turbopack</strong></td>
+<td>Bundler</td>
+<td>Webpack successor (from Vercel, still evolving)</td>
+<td>Promises faster builds and modern DX</td>
+</tr>
+</tbody>
+</table></div>
 
 
 
@@ -1538,7 +1687,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../../tdd/react-tdd-style/" class="md-footer__link md-footer__link--prev" aria-label="Previous: React TDD Style">
+          <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1548,20 +1697,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                React TDD Style
+                Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="../refactoring-strategy/" class="md-footer__link md-footer__link--next" aria-label="Next: Refactoring Strategy">
+          <a href="../compilers/" class="md-footer__link md-footer__link--next" aria-label="Next: Compilers">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Refactoring Strategy
+                Compilers
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1597,10 +1746,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.tabs.sticky", "header.autohide", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
