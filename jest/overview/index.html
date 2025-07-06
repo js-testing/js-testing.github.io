@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://js-testing.github.io/testing/stubb/">
+        <link rel="canonical" href="https://js-testing.github.io/jest/overview/">
       
       
-        <link rel="prev" href="../developer-vs-qa/">
+        <link rel="prev" href="../../tdd/react-tdd-style/">
       
       
-        <link rel="next" href="../react/">
+        <link rel="next" href="../refactoring-strategy/">
       
       
       <link rel="icon" href="../../assets/logo/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Stub - JS Testing</title>
+        <title>Overview - JS Testing</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#understanding-mocking-and-stubb" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Stub
+              Overview
             
           </span>
         </div>
@@ -260,13 +260,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../intro/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../testing/intro/" class="md-tabs__link">
           
   
   
@@ -302,11 +300,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../jest/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -648,29 +648,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -683,7 +678,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Testing
@@ -697,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
+      <a href="../../testing/intro/" class="md-nav__link">
         
   
   
@@ -720,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../types/" class="md-nav__link">
+      <a href="../../testing/types/" class="md-nav__link">
         
   
   
@@ -743,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../developer-vs-qa/" class="md-nav__link">
+      <a href="../../testing/developer-vs-qa/" class="md-nav__link">
         
   
   
@@ -763,32 +758,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Stub
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../testing/stubb/" class="md-nav__link">
         
   
   
@@ -799,95 +772,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mocking" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mocking
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stubs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Stubs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tools
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#msw-vs-nock-vs-jest-mocks" class="md-nav__link">
-    <span class="md-ellipsis">
-      🆚 MSW vs Nock vs Jest Mocks
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#expanded-comparison-msw-vs-nock-vs-jest-vs-sinon-vs-others" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Expanded Comparison: MSW vs Nock vs Jest vs Sinon vs Others
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tldr-which-to-choose" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ TL;DR — Which to Choose?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reference
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -900,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../react/" class="md-nav__link">
+      <a href="../../testing/react/" class="md-nav__link">
         
   
   
@@ -923,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../relay/" class="md-nav__link">
+      <a href="../../testing/relay/" class="md-nav__link">
         
   
   
@@ -1205,24 +1089,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -1235,7 +1124,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Jest
@@ -1246,10 +1135,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../jest/overview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1260,6 +1171,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1272,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../jest/refactoring-strategy/" class="md-nav__link">
+      <a href="../refactoring-strategy/" class="md-nav__link">
         
   
   
@@ -1393,66 +1333,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mocking" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mocking
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stubs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Stubs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tools
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#msw-vs-nock-vs-jest-mocks" class="md-nav__link">
-    <span class="md-ellipsis">
-      🆚 MSW vs Nock vs Jest Mocks
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#expanded-comparison-msw-vs-nock-vs-jest-vs-sinon-vs-others" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔍 Expanded Comparison: MSW vs Nock vs Jest vs Sinon vs Others
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tldr-which-to-choose" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ TL;DR — Which to Choose?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#reference" class="md-nav__link">
     <span class="md-ellipsis">
       Reference
@@ -1477,129 +1357,14 @@
 
 
 
-<div><h1 id="understanding-mocking-and-stubb">Understanding Mocking and Stubb</h1>
-<p>In unit testing, mocking and stubbing are techniques used to isolate the unit under test from its dependencies. This allows us to focus on testing the specific behaviour of the unit without relying in the external factors or complex setups.</p>
-<h2 id="mocking">Mocking</h2>
-<p>Mocking involves replaing real dependencies with fake implementations. This is particularly useful when dealing with external dependecies like network request, database interactions, or complex third-party libraries.</p>
-<h2 id="stubs">Stubs</h2>
-<p>Stubs are simplified implementations of dependencies that return predefined values or perform specific actions. Stubs are often used to control the behavior of dependencies and to isolate the unit under test.</p>
+<div><h1 id="overview">Overview</h1>
 <hr>
-<h2 id="tools">Tools</h2>
-<h3 id="msw-vs-nock-vs-jest-mocks">🆚 MSW vs Nock vs Jest Mocks</h3>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>MSW</th>
-<th>Nock</th>
-<th>Jest Mock</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Level</td>
-<td>Network-level</td>
-<td>HTTP module</td>
-<td>Function/module-level</td>
-</tr>
-<tr>
-<td>Browser Support</td>
-<td>✅ Yes (via Service Worker)</td>
-<td>❌ Node only</td>
-<td>✅ Yes</td>
-</tr>
-<tr>
-<td>API Realism</td>
-<td>✅ High</td>
-<td>Medium</td>
-<td>❌ Low</td>
-</tr>
-<tr>
-<td>GraphQL</td>
-<td>✅ Built-in support</td>
-<td>❌ No</td>
-<td>❌ Manual</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3 id="expanded-comparison-msw-vs-nock-vs-jest-vs-sinon-vs-others">🔍 Expanded Comparison: MSW vs Nock vs Jest vs Sinon vs Others</h3>
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Type</th>
-<th>Main Use Case</th>
-<th>Works in Browser?</th>
-<th>Works in Node?</th>
-<th>Level of Mocking</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>MSW</strong></td>
-<td>API Mocking (Network)</td>
-<td>Mock REST/GraphQL at <strong>network level</strong> (realistic)</td>
-<td>✅ Yes</td>
-<td>✅ Yes</td>
-<td>Network-level</td>
-</tr>
-<tr>
-<td><strong>Nock</strong></td>
-<td>HTTP Mocking</td>
-<td>Mock Node.js <code>http</code>/<code>https</code> requests</td>
-<td>❌ No</td>
-<td>✅ Yes</td>
-<td>Network-level (Node only)</td>
-</tr>
-<tr>
-<td><strong>Jest Mocks</strong></td>
-<td>Function/Module Mock</td>
-<td>Unit test JS/TS code by mocking functions/modules</td>
-<td>✅ Yes</td>
-<td>✅ Yes</td>
-<td>Code-level</td>
-</tr>
-<tr>
-<td><strong>Sinon</strong></td>
-<td>Spy/Stub/Mock</td>
-<td>Flexible mocking of any function or object</td>
-<td>✅ Yes</td>
-<td>✅ Yes</td>
-<td>Code-level</td>
-</tr>
-<tr>
-<td><strong>TestDouble</strong></td>
-<td>Mocking Lib</td>
-<td>Clean, readable test doubles (stub/mock/spy)</td>
-<td>✅ Yes</td>
-<td>✅ Yes</td>
-<td>Code-level</td>
-</tr>
-<tr>
-<td><strong>Vitest Mocks</strong></td>
-<td>Like Jest (for Vite)</td>
-<td>Jest-compatible mocking in Vite apps</td>
-<td>✅ Yes</td>
-<td>✅ Yes</td>
-<td>Code-level</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3 id="tldr-which-to-choose">✅ TL;DR — Which to Choose?</h3>
-<ul>
-<li><mark>Use MSW</mark> if you want to mock <strong>API calls realistically</strong> (e.g., React apps, browser testing).</li>
-<li><mark>Use Nock</mark> for mocking <strong>HTTP requests in Node.js</strong> (e.g., backend services).</li>
-<li><mark>Use Jest mocks or Sinon</mark> to mock or spy on <strong>functions</strong>, <strong>classes</strong>, or <strong>modules</strong>.</li>
-<li><mark>Use TestDouble</mark> if you prefer a clean, expressive syntax and TDD-friendly style.</li>
-</ul>
-<hr>
-<p>Would you like a practical example showing MSW + Jest + Sinon working together in one test suite?</p>
 <hr>
 <h2 id="reference">Reference</h2>
 <ul>
-<li><a href="#">Level Up your Javascript by Victor Jayden</a></li>
+<li><a href="https://www.linkedin.com/pulse/vitest-vs-jest-personal-take-testing-frameworks-bhuvan-chawla-uvjfc/">Linkedin: Vitest vs Jest: A Personal Take on Testing Frameworks</a></li>
+<li><a href="https://medium.com/@harish.bisht/vitest-unleashing-the-next-generation-of-testing-frameworks-7e6da7201759">Medium: Vitest: Unleashing the Next Generation of Testing Frameworks</a></li>
+<li><a href="https://lil-armstrong.medium.com/setup-vite2-with-vitest-jest-for-testing-in-react-app-1c8a1972446">Medium: Setup Vite2 with Vitest &amp; Jest for testing in react app</a></li>
 </ul></div>
 
 
@@ -1636,7 +1401,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../developer-vs-qa/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Dev vs QA Role">
+          <a href="../../tdd/react-tdd-style/" class="md-footer__link md-footer__link--prev" aria-label="Previous: React TDD Style">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1646,20 +1411,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Dev vs QA Role
+                React TDD Style
               </div>
             </div>
           </a>
         
         
           
-          <a href="../react/" class="md-footer__link md-footer__link--next" aria-label="Next: React">
+          <a href="../refactoring-strategy/" class="md-footer__link md-footer__link--next" aria-label="Next: Refactoring Strategy">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                React
+                Refactoring Strategy
               </div>
             </div>
             <div class="md-footer__button md-icon">
