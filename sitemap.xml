@@ -2,146 +2,178 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://js-testing.github.io/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/blog/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/blog/2025/05/25/beginners-guide-switching-from-jest-to-vitest-in-react-projects/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/blog/2025/05/21/choosing-between-jest-vitest-and-react-testing-library/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/blog/2025/05/22/understanding-the-difference-between-jsdom-and-testing-libraryjest-dom/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/blog/2025/05/23/controlled-vs-uncontrolled-components-in-react/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/blog/2025/05/24/controlled-vs-uncontrolled-form-components-in-react/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/blog/2025/05/26/-testing-in-react-vitest-jest--react-testing-library-explained/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/hooks/custom-hooks/</loc>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/package/jest/overview/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/package/jest/refactoring-strategy/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/package/rtl/example/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/package/rtl/overview/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/package/rtl/setup/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/package/vitest/overview/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/profiler/overview/</loc>
+         <lastmod>2025-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/profiler/types/</loc>
+         <lastmod>2025-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/profiler/when-to-use/</loc>
+         <lastmod>2025-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/profiler/react-devtools/commit/</loc>
+         <lastmod>2025-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/profiler/react-devtools/overview/</loc>
+         <lastmod>2025-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/profiler/react-devtools/profiler-workflow/</loc>
+         <lastmod>2025-07-11</lastmod>
+    </url>
+    <url>
+         <loc>https://js-testing.github.io/profiler/react-profiler-api/overview/</loc>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tdd/approach/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tdd/characterization-testing/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tdd/example/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tdd/folder-structure/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tdd/overview/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tdd/react-tdd-style/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tdd/tdd-styles/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tdd/test-last-approach/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tdd/types/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/testing/developer-vs-qa/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/testing/intro/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/testing/react/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/testing/relay/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/testing/stubb/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/testing/types/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tools/bundlers/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tools/compilers/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tools/machine-code/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/tools/overview/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/blog/archive/2025/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/blog/category/frontend/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
     <url>
          <loc>https://js-testing.github.io/blog/category/testing/</loc>
-         <lastmod>2025-07-06</lastmod>
+         <lastmod>2025-07-11</lastmod>
     </url>
 </urlset>
